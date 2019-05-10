@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3sy6iiw7nd6ah</unique-id>
+    <saved-with-version>26900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Miscelaneos">
+            <object-type name="kb" sid="456453851105986">
+                <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="f" sid="878284813351025">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="gp" sid="250401426435203">
+                <plugin id="gamepad" />
+            </object-type>
+            <object-type name="Mouse" sid="774910838290352">
+                <plugin id="Mouse" />
+            </object-type>
+            <object-type global="1" name="CharacterInput" sid="285747280510180">
+                <plugin id="Arr" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Players">
+            <object-type name="Player1" sid="852201703958145">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation-folder name="Fuego">
+                        <animation framecount="1" loop="0" name="FuegoWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="584779414279364" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoWalkTop" pingpong="0" repeatcount="1" repeatto="0" sid="663494739264301" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoWalkTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="431903359016798" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoWalkBot" pingpong="0" repeatcount="1" repeatto="0" sid="360896501831086" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoWalkBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="476741311393165" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="820166590515085" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="953588005759710" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaWalkTop" pingpong="0" repeatcount="1" repeatto="0" sid="338758254033881" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaWalkTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="844554865019451" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaWalkBot" pingpong="0" repeatcount="1" repeatto="0" sid="150726149394763" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaWalkBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="959740064201113" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="354922611487131" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player2" sid="907055862779656">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="WalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="825075716142909" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="WalkTop" pingpong="0" repeatcount="1" repeatto="0" sid="520738502268917" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="WalkTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="233189392784049" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="WalkBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="410326913662818" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="WalkBot" pingpong="0" repeatcount="1" repeatto="0" sid="688268160937555" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="WalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="192930487400580" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player3" sid="128569390247445">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="366739301758275" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player4" sid="964671329787048">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868233772441623" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Camara" sid="868670560047614">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="SeguimientoCamara" sid="249985387698693" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="275288643944531">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944684225629068" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="980295486662830">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="467374652413434">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="386426677046945">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="773689512930881" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="michaelbay640x" sid="791964521178620">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839238860836665" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\diego\Desktop\michael-bay-640x400.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="904106866162996">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="AnimationText" sid="867038613781697">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="UIDPlayer" sid="745584753914081" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="596648898810944">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="INPUT" sid="553070265760625">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Players" plugin-id="Sprite" sid="593276310540039">
+            <members>
+                <member>Player1</member>
+                <member>Player2</member>
+                <member>Player3</member>
+                <member>Player4</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="Active" sid="994515245441574" type="number" />
+                <instance-variable name="InputGroup" sid="692380300516335" type="string" />
+                <instance-variable name="NumX" sid="233050617179914" type="number" />
+                <instance-variable name="NumY" sid="565563619551992" type="number" />
+                <instance-variable name="cmdx" sid="292510110500140" type="number" />
+                <instance-variable name="cmdy" sid="453332932013829" type="number" />
+                <instance-variable name="UIDSprite" sid="160692672914312" type="number" />
+                <instance-variable name="Character" sid="570346294991843" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="481838044988093">
+                    <behavior id="custom" />
+                </behavior-type>
+                <behavior-type name="8Direcciones" sid="102968325859455">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Asset.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="kb" uid="4" />
+        <global-instance type="f" uid="13" />
+        <global-instance type="gp" uid="14">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="15" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
