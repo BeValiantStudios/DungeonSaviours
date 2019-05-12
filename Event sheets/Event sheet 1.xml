@@ -145,11 +145,7 @@
                             <param id="0" name="Key">38</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="469836230444972" type="Player2">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="810508185778753">
                     <conditions>
@@ -157,11 +153,7 @@
                             <param id="0" name="Key">40</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="831240320443007" type="Player2">
-                            <param id="0" name="Control">3</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="418924715868918">
                     <conditions>
@@ -169,11 +161,7 @@
                             <param id="0" name="Key">37</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="521125751727082" type="Player2">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="200777555717274">
                     <conditions>
@@ -181,11 +169,7 @@
                             <param id="0" name="Key">39</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="560879723190064" type="Player2">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
@@ -197,11 +181,7 @@
                             <param id="0" name="Key">73</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="381257000888933" type="Player3">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="765183203537340">
                     <conditions>
@@ -209,11 +189,7 @@
                             <param id="0" name="Key">75</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="414167929806875" type="Player3">
-                            <param id="0" name="Control">3</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="674723681455692">
                     <conditions>
@@ -221,11 +197,7 @@
                             <param id="0" name="Key">74</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="130500361441441" type="Player3">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="307179709468578">
                     <conditions>
@@ -233,11 +205,7 @@
                             <param id="0" name="Key">76</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="103798487188263" type="Player3">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
@@ -249,11 +217,7 @@
                             <param id="0" name="Key">104</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="590571763246277" type="Player4">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="504063231547765">
                     <conditions>
@@ -261,11 +225,7 @@
                             <param id="0" name="Key">101</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="790403480766789" type="Player4">
-                            <param id="0" name="Control">3</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="128514552093666">
                     <conditions>
@@ -273,11 +233,7 @@
                             <param id="0" name="Key">100</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="392900884317151" type="Player4">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="237120495616192">
                     <conditions>
@@ -285,11 +241,7 @@
                             <param id="0" name="Key">102</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direcciones" id="7" name="Simulate control" sid="620095547699240" type="Player4">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
@@ -306,15 +258,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="790057665572089" type="Player2">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="990408045851970" type="Player3">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="357017391152471" type="Player4">
-                                    <param id="0" name="State">1</param>
-                                </action>
                                 <action id="-12" name="Set group active" sid="666767009853454" type="System">
                                     <param id="0" name="Group name">&quot;Input Player 2&quot;</param>
                                     <param id="1" name="State">0</param>
@@ -375,15 +318,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="564703797303061" type="Player2">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="867084070806590" type="Player3">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="709399704360869" type="Player4">
-                                    <param id="0" name="State">1</param>
-                                </action>
                                 <action id="-12" name="Set group active" sid="729123970196148" type="System">
                                     <param id="0" name="Group name">&quot;Input Player 2&quot;</param>
                                     <param id="1" name="State">1</param>
@@ -415,14 +349,6 @@
                                         <condition id="-1" name="Every tick" sid="103857813997772" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="863205655453985" type="System">
-                                            <param id="0" name="Variable">CamaraX</param>
-                                            <param id="1" name="Value">(Player1.X+Player2.X)/Players</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="379566130436179" type="System">
-                                            <param id="0" name="Variable">CamaraY</param>
-                                            <param id="1" name="Value">(Player1.Y+Player2.Y)/Players</param>
-                                        </action>
                                         <action id="-3" name="Set position" sid="931707746681754" type="Camara">
                                             <param id="0" name="X">CamaraX</param>
                                             <param id="1" name="Y">CamaraY</param>
@@ -444,15 +370,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="431887046236115" type="Player2">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="471463154242714" type="Player3">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="586395414507798" type="Player4">
-                                    <param id="0" name="State">1</param>
-                                </action>
                                 <action id="-12" name="Set group active" sid="540984844168735" type="System">
                                     <param id="0" name="Group name">&quot;Input Player 2&quot;</param>
                                     <param id="1" name="State">1</param>
@@ -484,14 +401,6 @@
                                         <condition id="-1" name="Every tick" sid="361823848414490" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="820285481625581" type="System">
-                                            <param id="0" name="Variable">CamaraX</param>
-                                            <param id="1" name="Value">(Player1.X+Player2.X+Player3.X)/Players</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="361176502364398" type="System">
-                                            <param id="0" name="Variable">CamaraY</param>
-                                            <param id="1" name="Value">(Player1.Y+Player2.Y+Player3.Y)/Players</param>
-                                        </action>
                                         <action id="-3" name="Set position" sid="102938567997919" type="Camara">
                                             <param id="0" name="X">CamaraX</param>
                                             <param id="1" name="Y">CamaraY</param>
@@ -513,15 +422,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="439989865166642" type="Player2">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="818019744969829" type="Player3">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="642400130288874" type="Player4">
-                                    <param id="0" name="State">0</param>
-                                </action>
                                 <action id="-12" name="Set group active" sid="946666269509999" type="System">
                                     <param id="0" name="Group name">&quot;Input Player 2&quot;</param>
                                     <param id="1" name="State">1</param>
@@ -553,14 +453,6 @@
                                         <condition id="-1" name="Every tick" sid="744935284186550" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="105183533031566" type="System">
-                                            <param id="0" name="Variable">CamaraX</param>
-                                            <param id="1" name="Value">(Player1.X+Player2.X+Player3.X+Player4.X)/Players</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="988179034441654" type="System">
-                                            <param id="0" name="Variable">CamaraY</param>
-                                            <param id="1" name="Value">(Player1.Y+Player2.Y+Player3.Y+Player4.Y)/Players</param>
-                                        </action>
                                         <action id="-3" name="Set position" sid="360328953066969" type="Camara">
                                             <param id="0" name="X">CamaraX</param>
                                             <param id="1" name="Y">CamaraY</param>
@@ -576,23 +468,8 @@
                         <event-block sid="911648229993121">
                             <conditions>
                                 <condition id="-1" name="Every tick" sid="622533450184165" type="System" />
-                                <condition id="-8" name="Compare two values" sid="132027348876742" type="System">
-                                    <param id="0" name="First value">distance(Player2.X,Player2.Y,Player1.X-50,Player1.Y-50)</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">50</param>
-                                </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="CustomMovement" id="5" name="Accelerate toward position" sid="582972313678643" type="Player2">
-                                    <param id="0" name="Acceleration">15000</param>
-                                    <param id="1" name="X">Player1.X-50</param>
-                                    <param id="2" name="Y">Player1.Y-50</param>
-                                </action>
-                                <action behavior="CustomMovement" id="2" name="Set speed" sid="475142601164668" type="Player2">
-                                    <param id="0" name="Which">0</param>
-                                    <param id="1" name="Speed">distance(Self.X,Self.Y,Player1.X,Player1.Y)*2</param>
-                                </action>
-                            </actions>
+                            <actions />
                         </event-block>
                     </sub-events>
                 </event-group>
@@ -601,23 +478,8 @@
                         <event-block sid="945382411131354">
                             <conditions>
                                 <condition id="-1" name="Every tick" sid="219117476427928" type="System" />
-                                <condition id="-8" name="Compare two values" sid="853618571626306" type="System">
-                                    <param id="0" name="First value">distance(Player3.X,Player3.Y,Player1.X-50,Player1.Y+50)</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">50</param>
-                                </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="CustomMovement" id="5" name="Accelerate toward position" sid="228580638662397" type="Player3">
-                                    <param id="0" name="Acceleration">15000</param>
-                                    <param id="1" name="X">Player1.X-50</param>
-                                    <param id="2" name="Y">Player1.Y+50</param>
-                                </action>
-                                <action behavior="CustomMovement" id="2" name="Set speed" sid="423730617697523" type="Player3">
-                                    <param id="0" name="Which">0</param>
-                                    <param id="1" name="Speed">distance(Self.X,Self.Y,Player1.X,Player1.Y)*2</param>
-                                </action>
-                            </actions>
+                            <actions />
                         </event-block>
                     </sub-events>
                 </event-group>
@@ -626,23 +488,8 @@
                         <event-block sid="757791358338677">
                             <conditions>
                                 <condition id="-1" name="Every tick" sid="141973863450216" type="System" />
-                                <condition id="-8" name="Compare two values" sid="488676442281702" type="System">
-                                    <param id="0" name="First value">distance(Player4.X,Player4.Y,Player1.X+50,Player1.Y+50)</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">50</param>
-                                </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="CustomMovement" id="5" name="Accelerate toward position" sid="109804006018192" type="Player4">
-                                    <param id="0" name="Acceleration">15000</param>
-                                    <param id="1" name="X">Player1.X+50</param>
-                                    <param id="2" name="Y">Player1.Y+50</param>
-                                </action>
-                                <action behavior="CustomMovement" id="2" name="Set speed" sid="604423019135391" type="Player4">
-                                    <param id="0" name="Which">0</param>
-                                    <param id="1" name="Speed">distance(Self.X,Self.Y,Player1.X,Player1.Y)*2</param>
-                                </action>
-                            </actions>
+                            <actions />
                         </event-block>
                     </sub-events>
                 </event-group>
@@ -1348,15 +1195,6 @@
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="105872917505858">
-                    <conditions />
-                    <actions>
-                        <action id="4" name="Set animation" sid="385499480178148" type="Player2">
-                            <param id="0" name="Animation">Player1.AnimationName</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
