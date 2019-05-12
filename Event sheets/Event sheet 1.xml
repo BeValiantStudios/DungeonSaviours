@@ -7,8 +7,10 @@
         <variable constant="0" name="CamaraY" sid="842681762685761" static="0" type="number">0</variable>
         <variable constant="0" name="CamaraX" sid="344271387424808" static="0" type="number">0</variable>
         <comment></comment>
-        <variable constant="0" name="Activo" sid="302336964726391" static="0" type="number">1</variable>
+        <variable constant="0" name="Activo" sid="302336964726391" static="0" type="number">0</variable>
+        <variable constant="0" name="Activo2" sid="152861891747443" static="0" type="number">0</variable>
         <variable constant="0" name="ListaDeUIDS" sid="795485726836228" static="0" type="text"></variable>
+        <variable constant="0" name="ListaDeUIDSInactive" sid="310766991744098" static="0" type="text"></variable>
         <event-block sid="957554080838314">
             <conditions>
                 <condition id="1" name="On text changed" sid="707600836273593" type="TextBox" />
@@ -17,6 +19,10 @@
                 <action id="-9" name="Set value" sid="245234192015746" type="System">
                     <param id="0" name="Variable">Players</param>
                     <param id="1" name="Value">TextBox.Text</param>
+                </action>
+                <action id="0" name="Call function" sid="553588378954350" type="f">
+                    <param id="0" name="Name">&quot;ActPlayers&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>
@@ -501,51 +507,12 @@
                     <conditions>
                         <condition id="-4" name="Trigger once while true" sid="643833228979065" type="System" />
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="478161642850230">
-                            <conditions>
-                                <condition id="-11" name="For Each" sid="568196874141488" type="System">
-                                    <param id="0" name="Object">Players</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="671979478275635">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="625950343523706" type="Players">
-                                            <param id="0" name="Instance variable">Active</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-12" name="Set group active" sid="965270005340973" type="System">
-                                            <param id="0" name="Group name">Players.InputGroup</param>
-                                            <param id="1" name="State">0</param>
-                                        </action>
-                                        <action behavior="CustomMovement" id="12" name="Set enabled" sid="525830574185041" type="Players">
-                                            <param id="0" name="State">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="391377976080020">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="457018067384218" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-12" name="Set group active" sid="459284389206887" type="System">
-                                            <param id="0" name="Group name">Players.InputGroup</param>
-                                            <param id="1" name="State">1</param>
-                                        </action>
-                                        <action behavior="CustomMovement" id="12" name="Set enabled" sid="585514296308660" type="Players">
-                                            <param id="0" name="State">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="0" name="Call function" sid="869864323757580" type="f">
+                            <param id="0" name="Name">&quot;ActPlayers&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="206298148942016">
                     <conditions />
@@ -1052,20 +1019,29 @@
                             <param id="0" name="Key">48</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="819560743158638" type="System">
+                            <param id="0" name="Variable">Activo2</param>
+                            <param id="1" name="Value">tokencount(ListaDeUIDSInactive,&quot;|&quot;)</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="165753254162112">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="565678639863409" type="System">
                                     <param id="0" name="Variable">Activo</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">tokencount(ListaDeUIDSInactive,&quot;|&quot;) -1</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-9" name="Set value" sid="253176168573943" type="System">
                                     <param id="0" name="Variable">Activo</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="813652166059281" type="f">
+                                    <param id="0" name="Name">&quot;Intercambio&quot;</param>
+                                    <param id="1" name="Parameter {n}">int(tokenat(ListaDeUIDS,0,&quot;|&quot;)){###}int(tokenat(ListaDeUIDSInactive,Activo,&quot;|&quot;))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1074,6 +1050,10 @@
                                 <condition id="-22" name="Else" sid="124949289456407" type="System" />
                             </conditions>
                             <actions>
+                                <action id="0" name="Call function" sid="935076893647155" type="f">
+                                    <param id="0" name="Name">&quot;Intercambio&quot;</param>
+                                    <param id="1" name="Parameter {n}">int(tokenat(ListaDeUIDS,0,&quot;|&quot;)){###}int(tokenat(ListaDeUIDSInactive,Activo,&quot;|&quot;))</param>
+                                </action>
                                 <action id="-10" name="Add to" sid="824463675224206" type="System">
                                     <param id="0" name="Variable">Activo</param>
                                     <param id="1" name="Value">1</param>
@@ -1082,12 +1062,7 @@
                         </event-block>
                         <event-block sid="838064834429596">
                             <conditions />
-                            <actions>
-                                <action id="0" name="Call function" sid="935076893647155" type="f">
-                                    <param id="0" name="Name">&quot;Intercambio&quot;</param>
-                                    <param id="1" name="Parameter {n}">int(tokenat(ListaDeUIDS,0,&quot;|&quot;)){###}int(tokenat(ListaDeUIDS,Activo,&quot;|&quot;))</param>
-                                </action>
-                            </actions>
+                            <actions />
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1196,35 +1171,144 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-            </sub-events>
-        </event-group>
-        <event-block sid="187710319914788">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="386373002256430" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="257245616440754" type="System">
-                    <param id="0" name="Variable">ListaDeUIDS</param>
-                    <param id="1" name="Value">&quot;&quot;</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="495415284147728">
+                <event-block sid="285128365880237">
                     <conditions>
-                        <condition id="-24" name="For Each (ordered)" sid="823848656653866" type="System">
-                            <param id="0" name="Object">Players</param>
-                            <param id="1" name="Expression">int(right(Players.InputGroup,1))</param>
-                            <param id="2" name="Order">0</param>
+                        <condition id="0" name="On function" sid="476055701253999" type="f">
+                            <param id="0" name="Name">&quot;ActPlayers&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="179864725562955">
+                            <conditions>
+                                <condition id="-10" name="For" sid="677046938669456" type="System">
+                                    <param id="0" name="Name">&quot;Act&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">Players-1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="999233521371492">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="734706753019649" type="Players">
+                                            <param id="0" name="Unique ID">int(tokenat(ListaDeUIDS,loopindex(&quot;Act&quot;),&quot;|&quot;))</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="622704201265384" type="Players">
+                                            <param id="0" name="Instance variable">Active</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="183945373273737">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="361831060419696" type="f">
+                                    <param id="0" name="Name">&quot;ActUIDS&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="363604846158069">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="909898078932273" type="System">
+                                    <param id="0" name="Object">Players</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="126641238479201">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="219726065290560" type="Players">
+                                            <param id="0" name="Instance variable">Active</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="205595991956295" type="System">
+                                            <param id="0" name="Group name">Players.InputGroup</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action behavior="CustomMovement" id="12" name="Set enabled" sid="799420204844043" type="Players">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="527154170150202">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="580420877108309" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="801646357292109" type="System">
+                                            <param id="0" name="Group name">Players.InputGroup</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action behavior="CustomMovement" id="12" name="Set enabled" sid="105885311111911" type="Players">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="410872321405180">
+                    <conditions>
+                        <condition id="0" name="On function" sid="694388961729665" type="f">
+                            <param id="0" name="Name">&quot;ActUIDS&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Add to" sid="764989289469886" type="System">
+                        <action id="-9" name="Set value" sid="257245616440754" type="System">
                             <param id="0" name="Variable">ListaDeUIDS</param>
-                            <param id="1" name="Value">Players.UID &amp; &quot;|&quot;</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="864235654911185" type="System">
+                            <param id="0" name="Variable">ListaDeUIDSInactive</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="495415284147728">
+                            <conditions>
+                                <condition id="-24" name="For Each (ordered)" sid="823848656653866" type="System">
+                                    <param id="0" name="Object">Players</param>
+                                    <param id="1" name="Expression">int(right(Players.InputGroup,1))</param>
+                                    <param id="2" name="Order">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="764989289469886" type="System">
+                                    <param id="0" name="Variable">ListaDeUIDS</param>
+                                    <param id="1" name="Value">Players.UID &amp; &quot;|&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="292153207032846">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="109430147015608" type="Players">
+                                            <param id="0" name="Instance variable">Active</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="482454476456426" type="System">
+                                            <param id="0" name="Variable">ListaDeUIDSInactive</param>
+                                            <param id="1" name="Value">Players.UID &amp; &quot;|&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
     </events>
 </c2eventsheet>
