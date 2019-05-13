@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eFunctions</name>
+    <events>
+        <comment>// Intercambia posicion de dos players // f.params UID1 UID2</comment>
+        <event-block sid="305093746056083">
+            <conditions>
+                <condition id="0" name="On function" sid="551913188006438" type="f">
+                    <param id="0" name="Name">&quot;Intercambio&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="FirstPosX" sid="868205437775842" static="0" type="number">0</variable>
+                <variable constant="0" name="FirstPosY" sid="573138681561305" static="0" type="number">0</variable>
+                <variable constant="0" name="FirstPosX2" sid="443526113511667" static="0" type="number">0</variable>
+                <variable constant="0" name="FirstPosY2" sid="917502468178312" static="0" type="number">0</variable>
+                <variable constant="0" name="Character1" sid="932082466846285" static="0" type="text"></variable>
+                <variable constant="0" name="Character2" sid="160009782234900" static="0" type="text"></variable>
+                <event-block sid="265956220015811">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="399699031156326" type="Players">
+                            <param id="0" name="Unique ID">f.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="693226458478231" type="System">
+                            <param id="0" name="Variable">FirstPosX</param>
+                            <param id="1" name="Value">Players.X</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="844193635768809" type="System">
+                            <param id="0" name="Variable">FirstPosY</param>
+                            <param id="1" name="Value">Players.Y</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="838159642371805" type="System">
+                            <param id="0" name="Variable">Character1</param>
+                            <param id="1" name="Value">Players.Character</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="569463117624920">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="932638968757059" type="Players">
+                            <param id="0" name="Unique ID">f.Param(1)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="534558530286727" type="System">
+                            <param id="0" name="Variable">FirstPosX2</param>
+                            <param id="1" name="Value">Players.X</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="406436725233572" type="System">
+                            <param id="0" name="Variable">FirstPosY2</param>
+                            <param id="1" name="Value">Players.Y</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="385390644963146" type="System">
+                            <param id="0" name="Variable">Character2</param>
+                            <param id="1" name="Value">Players.Character</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="188957789908469">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="963964994211604" type="Players">
+                            <param id="0" name="Unique ID">f.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="856496073635330" type="Players">
+                            <param id="0" name="X">FirstPosX2</param>
+                            <param id="1" name="Y">FirstPosY2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="289153891410045" type="Players">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">Character2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="581806726431325">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="549932322572951" type="Players">
+                            <param id="0" name="Unique ID">f.Param(1)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="241680385747927" type="Players">
+                            <param id="0" name="X">FirstPosX</param>
+                            <param id="1" name="Y">FirstPosY</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="981525556177125" type="Players">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">Character1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>// Actualiza listas de player.uid para su uso</comment>
+        <event-block sid="256595126071224">
+            <conditions>
+                <condition id="0" name="On function" sid="775037231814988" type="f">
+                    <param id="0" name="Name">&quot;ActUIDS&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="167262564379481" type="System">
+                    <param id="0" name="Variable">ListaDeUIDS</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="561421322480937" type="System">
+                    <param id="0" name="Variable">ListaDeUIDSInactive</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="885422084878885">
+                    <conditions>
+                        <condition id="-24" name="For Each (ordered)" sid="449787315962665" type="System">
+                            <param id="0" name="Object">Players</param>
+                            <param id="1" name="Expression">int(right(Players.InputGroup,1))</param>
+                            <param id="2" name="Order">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="869865547782585" type="System">
+                            <param id="0" name="Variable">ListaDeUIDS</param>
+                            <param id="1" name="Value">Players.UID &amp; &quot;|&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="510372729964470">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="113193345067660" type="Players">
+                                    <param id="0" name="Instance variable">Active</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="198459739132816" type="System">
+                                    <param id="0" name="Variable">ListaDeUIDSInactive</param>
+                                    <param id="1" name="Value">Players.UID &amp; &quot;|&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>// Actualiza input de players segun players.active usando ActUIDS()</comment>
+        <event-block sid="845318503193291">
+            <conditions>
+                <condition id="0" name="On function" sid="966491798260504" type="f">
+                    <param id="0" name="Name">&quot;ActPlayers&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="375762586545662">
+                    <conditions>
+                        <condition id="-10" name="For" sid="805394344118881" type="System">
+                            <param id="0" name="Name">&quot;Act&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">Players-1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="392248259234160">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="530268006715479" type="Players">
+                                    <param id="0" name="Unique ID">int(tokenat(ListaDeUIDS,loopindex(&quot;Act&quot;),&quot;|&quot;))</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="200659670821813" type="Players">
+                                    <param id="0" name="Instance variable">Active</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="939972996359466">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Call function" sid="265683308081224" type="f">
+                            <param id="0" name="Name">&quot;ActUIDS&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="555578302514633">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="255392180015458" type="System">
+                            <param id="0" name="Object">Players</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="805951651461195">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="637946707754765" type="Players">
+                                    <param id="0" name="Instance variable">Active</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="315136621798008" type="System">
+                                    <param id="0" name="Group name">Players.InputGroup</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="200862565672249" type="Players">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="178608275387080">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="983605598698738" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="427248482583727" type="System">
+                                    <param id="0" name="Group name">Players.InputGroup</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="CustomMovement" id="12" name="Set enabled" sid="377305804605491" type="Players">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

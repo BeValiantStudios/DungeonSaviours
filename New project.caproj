@@ -36,6 +36,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Test</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -43,7 +44,7 @@
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Percentage text</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -1292,6 +1293,28 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="HUD">
+            <object-type name="INPUT" sid="553070265760625">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="AnimationText" sid="867038613781697">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="UIDPlayer" sid="745584753914081" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pin" sid="596648898810944">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="TextBox" sid="904106866162996">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="FPSCPU" sid="597874697792835">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="Camara" sid="868670560047614">
             <plugin id="Sprite" />
             <instance-variables>
@@ -1332,23 +1355,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TextBox" sid="904106866162996">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="AnimationText" sid="867038613781697">
-            <plugin id="Text" />
-            <instance-variables>
-                <instance-variable name="UIDPlayer" sid="745584753914081" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Pin" sid="596648898810944">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
-        <object-type name="INPUT" sid="553070265760625">
-            <plugin id="Text" />
-        </object-type>
     </object-folder>
     <families>
         <family name="Players" plugin-id="Sprite" sid="593276310540039">
@@ -1359,14 +1365,11 @@
                 <member>Player4</member>
             </members>
             <instance-variables>
-                <instance-variable name="Active" sid="994515245441574" type="number" />
+                <instance-variable name="Active" sid="811185679275543" type="boolean" />
+                <instance-variable name="Character" sid="570346294991843" type="string" />
                 <instance-variable name="InputGroup" sid="692380300516335" type="string" />
                 <instance-variable name="NumX" sid="233050617179914" type="number" />
                 <instance-variable name="NumY" sid="565563619551992" type="number" />
-                <instance-variable name="cmdx" sid="292510110500140" type="number" />
-                <instance-variable name="cmdy" sid="453332932013829" type="number" />
-                <instance-variable name="UIDSprite" sid="160692672914312" type="number" />
-                <instance-variable name="Character" sid="570346294991843" type="string" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="CustomMovement" sid="481838044988093">
@@ -1379,11 +1382,16 @@
         </family>
     </families>
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Test.xml</layout>
         <layout>Asset.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>eMain.xml</event-sheet>
+        <event-sheet>eCamera.xml</event-sheet>
+        <event-sheet>eEnemies.xml</event-sheet>
+        <event-sheet>ePlayers.xml</event-sheet>
+        <event-sheet>eFunctions.xml</event-sheet>
+        <event-sheet>eHud.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="kb" uid="4" />

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eHud</name>
+    <events>
+        <comment>// Player animation name</comment>
+        <event-block sid="317767263355282">
+            <conditions>
+                <condition id="-18" name="On created" sid="213377675691035" type="Players" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="781973630981400" type="Players">
+                    <param id="0" name="Object">AnimationText</param>
+                    <param id="1" name="Layer">&quot;Txt&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="383440545341818" type="AnimationText">
+                    <param id="0" name="Y">Self.Y -30</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="696736371578884" type="AnimationText">
+                    <param id="0" name="Pin to">Players</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="609838883139407" type="AnimationText">
+                    <param id="0" name="Instance variable">UIDPlayer</param>
+                    <param id="1" name="Value">Players.UID</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>// Technical HUD / Player animation name refresh</comment>
+        <event-block sid="329030475514585">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="660387756236614" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="991908494717584" type="INPUT">
+                    <param id="0" name="Text">&quot;LastKeyCode: &quot; &amp; kb.LastKeyCode</param>
+                </action>
+                <action id="0" name="Set text" sid="442078819887699" type="FPSCPU">
+                    <param id="0" name="Text">&quot;CPU: &quot; &amp; (cpuutilisation*100) &amp;&quot;%&quot; &amp;newline&amp;&#x0D;&#x0A;&quot;FPS: &quot; &amp; fps</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="426253493429105">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="998263128352004" type="System">
+                            <param id="0" name="Object">AnimationText</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="823189172940780">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="372119085700334" type="Players">
+                                    <param id="0" name="Unique ID">AnimationText.UIDPlayer</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="796852407909018" type="AnimationText">
+                                    <param id="0" name="Text">Players.AnimationName</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ePlayers</name>
+    <events>
+        <event-group description="" sid="442539690671937" title="Inputs">
+            <sub-events>
+                <event-group description="" sid="626082789582333" title="Input Player 1">
+                    <sub-events>
+                        <event-block sid="999951383525634">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="737279826545454" type="kb">
+                                    <param id="0" name="Key">87</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="939106000499159" type="Player1">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="352451705489780">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="135812982345410" type="kb">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="486900272226951" type="Player1">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="796199400493530">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="401567727654461" type="kb">
+                                    <param id="0" name="Key">65</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="381409518470986" type="Player1">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="555672826608746">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="964504847427533" type="kb">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="461345504294645" type="Player1">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="860526414002179" title="Input Player 2">
+                    <sub-events>
+                        <event-block sid="136031243842975">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="913498574828919" type="kb">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="122568401088345">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="803475984957435" type="kb">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="799704228749484">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="422080236591179" type="kb">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="177352364344009">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="515596099525151" type="kb">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="171989397593271" title="Input Player 3">
+                    <sub-events>
+                        <event-block sid="723974128731103">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="145371834190936" type="kb">
+                                    <param id="0" name="Key">73</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="430243576054326">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="959453933622048" type="kb">
+                                    <param id="0" name="Key">75</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="584913949399611">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="378946605618136" type="kb">
+                                    <param id="0" name="Key">74</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="101978302563648">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="421742772295439" type="kb">
+                                    <param id="0" name="Key">76</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="308052334551043" title="Input Player 4">
+                    <sub-events>
+                        <event-block sid="393673645215072">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="856375930086792" type="kb">
+                                    <param id="0" name="Key">104</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="964320147058349">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="586247624786283" type="kb">
+                                    <param id="0" name="Key">101</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="636263741070821">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="291737343368506" type="kb">
+                                    <param id="0" name="Key">100</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="965993530429277">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="743227952842807" type="kb">
+                                    <param id="0" name="Key">102</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="111856620128797" title="Animation">
+            <sub-events>
+                <event-block sid="918131911485259">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="738662727682074" type="Players" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="726134599206568">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="111437690055979" type="System">
+                                    <param id="0" name="Object">Players</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="535381966522914">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="727976448961647" type="Players">
+                                            <param id="0" name="Instance variable">Active</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="480477306164463">
+                                            <conditions>
+                                                <condition behavior="8Direcciones" id="0" name="Is moving" sid="753093997213509" type="Players" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="683393342218033">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="699653939245063" type="System">
+                                                            <param id="0" name="First value">Players.8Direcciones.VectorY</param>
+                                                            <param id="1" name="Comparison">2</param>
+                                                            <param id="2" name="Second value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="774084593224932">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="248596412714825" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">-125</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="496784133760980" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">-60</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="548610933927037" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkTopLft&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="972281699079259">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="486412414219457" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">-60</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="410492710570768" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="813641258364941" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkTop&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="689167345846816">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="862979634893115" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="241157572475393" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">125</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="301233054430778" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkTopRgt&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                                <event-block sid="626276996067762">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="247105950833940" type="System" />
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="491414761355025">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="185155942430017" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">-125</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="983919220646496" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">-60</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="246076181080482" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkBotLft&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="748583147090931">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="668293376463956" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">-60</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="417392498907632" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="998470347123300" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkBot&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="114822697560823">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="126153413848927" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="120349043097191" type="System">
+                                                                    <param id="0" name="First value">Players.8Direcciones.VectorX</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">125</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="929293380187047" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkBotRgt&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="553377442072884">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="486027610283728" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="118520155196262">
+                                            <conditions>
+                                                <condition behavior="CustomMovement" id="0" name="Is moving" sid="150564914605826" type="Players" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="568069070545899">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="404188546016488" type="System">
+                                                            <param id="0" name="First value">Players.CustomMovement.dy</param>
+                                                            <param id="1" name="Comparison">2</param>
+                                                            <param id="2" name="Second value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="782561749410750">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="600188331898258" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">-125</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="482528612107071" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="103810904044593" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkTopLft&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="301247112748720">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="733334139472043" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">-60</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="141761358914707" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="460555800335810" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkTop&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="548735563462506">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="183027043943337" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="303483111068064" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">125</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="379203488850019" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkTopRgt&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                                <event-block sid="994269339468831">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="304755867012973" type="System" />
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="573870515283606">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="269672676486213" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">-125</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="876426451877470" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="917997342190434" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkBotLft&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="705603162051174">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="368811584954797" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">-60</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="711485553143783" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="711312066409769" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkBot&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="343042467868267">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="132407603919283" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">5</param>
+                                                                    <param id="2" name="Second value">60</param>
+                                                                </condition>
+                                                                <condition id="-8" name="Compare two values" sid="435334237609935" type="System">
+                                                                    <param id="0" name="First value">Players.CustomMovement.dx</param>
+                                                                    <param id="1" name="Comparison">2</param>
+                                                                    <param id="2" name="Second value">125</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="503258905660387" type="Players">
+                                                                    <param id="0" name="Animation">Self.Character &amp; &quot;WalkBotRgt&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

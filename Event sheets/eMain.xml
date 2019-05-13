@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eMain</name>
+    <events>
+        <include>ePlayers</include>
+        <include>eHud</include>
+        <include>eFunctions</include>
+        <include>eEnemies</include>
+        <include>eCamera</include>
+        <variable constant="0" name="Players" sid="647461634613002" static="0" type="number">1</variable>
+        <variable constant="0" name="CamaraY" sid="842681762685761" static="0" type="number">0</variable>
+        <variable constant="0" name="CamaraX" sid="344271387424808" static="0" type="number">0</variable>
+        <comment>// Variables para intercambio</comment>
+        <variable constant="0" name="Activo" sid="302336964726391" static="0" type="number">0</variable>
+        <variable constant="0" name="ListaDeUIDS" sid="795485726836228" static="0" type="text"></variable>
+        <variable constant="0" name="ListaDeUIDSInactive" sid="310766991744098" static="0" type="text"></variable>
+        <event-block sid="384543293374546">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="948478148305428" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="869864323757580" type="f">
+                    <param id="0" name="Name">&quot;ActPlayers&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="544789076177150" title="Miscelaneos">
+            <sub-events>
+                <event-block sid="957554080838314">
+                    <conditions>
+                        <condition id="1" name="On text changed" sid="707600836273593" type="TextBox" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="245234192015746" type="System">
+                            <param id="0" name="Variable">Players</param>
+                            <param id="1" name="Value">TextBox.Text</param>
+                        </action>
+                        <action id="0" name="Call function" sid="553588378954350" type="f">
+                            <param id="0" name="Name">&quot;ActPlayers&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="346961114191768">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="437141071355984" type="kb">
+                            <param id="0" name="Key">48</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="165753254162112">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="565678639863409" type="System">
+                                    <param id="0" name="Variable">Activo</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">tokencount(ListaDeUIDSInactive,&quot;|&quot;) -1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="253176168573943" type="System">
+                                    <param id="0" name="Variable">Activo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="813652166059281" type="f">
+                                    <param id="0" name="Name">&quot;Intercambio&quot;</param>
+                                    <param id="1" name="Parameter {n}">int(tokenat(ListaDeUIDS,0,&quot;|&quot;)){###}int(tokenat(ListaDeUIDSInactive,Activo,&quot;|&quot;))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="383319009625942">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="124949289456407" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="935076893647155" type="f">
+                                    <param id="0" name="Name">&quot;Intercambio&quot;</param>
+                                    <param id="1" name="Parameter {n}">int(tokenat(ListaDeUIDS,0,&quot;|&quot;)){###}int(tokenat(ListaDeUIDSInactive,Activo,&quot;|&quot;))</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="824463675224206" type="System">
+                                    <param id="0" name="Variable">Activo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
