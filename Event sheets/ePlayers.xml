@@ -503,5 +503,878 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="987709720189127">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="867486625778351" type="Players">
+                    <param id="0" name="Object">Puas</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="805421162324642" type="Players">
+                    <param id="0" name="Instance variable">VidaActual</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="598969716014943" title="Portraits">
+            <sub-events>
+                <event-group description="" sid="961055357832084" title="Player1">
+                    <sub-events>
+                        <event-block sid="872031037943403">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="201820854700644" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Fuego&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="865077221324518" type="PortraitP1">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="647211325546152">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="146634675396756" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Agua&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="562662804336064" type="PortraitP1">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="448662939528758">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="449214743129517" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Aire&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="940676982005176" type="PortraitP1">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="931217412973463">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="515037355893497" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Tierra&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="136538880181218" type="PortraitP1">
+                                    <param id="0" name="Frame number">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="909298937461620">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="820044134994745" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Trueno&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="808802469855644" type="PortraitP1">
+                                    <param id="0" name="Frame number">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="714060159598194">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="631616107721499" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Hielo&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="974369066992576" type="PortraitP1">
+                                    <param id="0" name="Frame number">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="448822108377058">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="796714440875650" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Luz&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="186383892433727" type="PortraitP1">
+                                    <param id="0" name="Frame number">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="279669718359268">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="122880771745611" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Oscuridad&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="585195246385834" type="PortraitP1">
+                                    <param id="0" name="Frame number">7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="207819849802642">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="848024416672670" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Fantasma&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="173087869782161" type="PortraitP1">
+                                    <param id="0" name="Frame number">8</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="842372128415847">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="860570664159747" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Musical&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="247509931336654" type="PortraitP1">
+                                    <param id="0" name="Frame number">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="745588786038179">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="377620221040342" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Planta&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="251048518911672" type="PortraitP1">
+                                    <param id="0" name="Frame number">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="163297604720836">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="988559485364361" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Camaleon&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="335212089545850" type="PortraitP1">
+                                    <param id="0" name="Frame number">11</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="530347498080246">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="474569396289771" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Acido&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="648407725729340" type="PortraitP1">
+                                    <param id="0" name="Frame number">12</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="205893933874424">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="261287296954135" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Slime&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="181108986749431" type="PortraitP1">
+                                    <param id="0" name="Frame number">13</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="852687895222544">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="945023518353383" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Metal&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="274891362091742" type="PortraitP1">
+                                    <param id="0" name="Frame number">14</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="607367409403950" title="Player2">
+                    <sub-events>
+                        <event-block sid="927834150767957">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="289251232588660" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Fuego&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="692892666582487" type="PortraitP2">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="241175504404639">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="264832733656220" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Agua&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="821502996215402" type="PortraitP2">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="431625403870017">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="486757728802805" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Aire&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="242137160903032" type="PortraitP2">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="998451095137410">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="646762005682921" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Tierra&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="680921429517002" type="PortraitP2">
+                                    <param id="0" name="Frame number">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="137325375701130">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="750316469890802" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Trueno&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="175436348236266" type="PortraitP2">
+                                    <param id="0" name="Frame number">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="576437430439498">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="840970563301338" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Hielo&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="435482408925097" type="PortraitP2">
+                                    <param id="0" name="Frame number">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="811547063501792">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="181413316720491" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Luz&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="318571526709772" type="PortraitP2">
+                                    <param id="0" name="Frame number">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="105560660589810">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="246631649875430" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Oscuridad&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="949319320591865" type="PortraitP2">
+                                    <param id="0" name="Frame number">7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="637505313176851">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="708080339942119" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Fantasma&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="941772379457323" type="PortraitP2">
+                                    <param id="0" name="Frame number">8</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="512343144919515">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="749735599163007" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Musical&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="309935823661647" type="PortraitP2">
+                                    <param id="0" name="Frame number">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="435165670904945">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="520498101314932" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Planta&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="442830356433000" type="PortraitP2">
+                                    <param id="0" name="Frame number">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="372887441685538">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="915933359371443" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Camaleon&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="825383095790424" type="PortraitP2">
+                                    <param id="0" name="Frame number">11</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="212934815891487">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="981306330509963" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Acido&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="466030790441943" type="PortraitP2">
+                                    <param id="0" name="Frame number">12</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="885872115766444">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="350518911160138" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Slime&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="928764507412532" type="PortraitP2">
+                                    <param id="0" name="Frame number">13</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="835779352114053">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="484921187370245" type="Player2">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Metal&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="997017426846693" type="PortraitP2">
+                                    <param id="0" name="Frame number">14</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="363026806323919" title="Player3">
+                    <sub-events>
+                        <event-block sid="123741152389675">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="785060977811437" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Fuego&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="997337866313566" type="PortraitP3">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="792331632628497">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="845862913797175" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Agua&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="857437780735853" type="PortraitP3">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="962501464496981">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="389433390339646" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Aire&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="759240672153698" type="PortraitP3">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="871217579714416">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="760551284945055" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Tierra&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="245360983530926" type="PortraitP3">
+                                    <param id="0" name="Frame number">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="202978065725084">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="162112475025124" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Trueno&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="727260275124037" type="PortraitP3">
+                                    <param id="0" name="Frame number">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="946887709665582">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="421167897256542" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Hielo&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="347030782179665" type="PortraitP3">
+                                    <param id="0" name="Frame number">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="210691597264320">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="483163783432522" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Luz&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="570241184532099" type="PortraitP3">
+                                    <param id="0" name="Frame number">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="787057405746616">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="267507166601992" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Oscuridad&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="881237408952188" type="PortraitP3">
+                                    <param id="0" name="Frame number">7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="838150862199933">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="815743957836250" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Fantasma&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="168355021340210" type="PortraitP3">
+                                    <param id="0" name="Frame number">8</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="248551337246814">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="473839237935124" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Musical&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="409575769160457" type="PortraitP3">
+                                    <param id="0" name="Frame number">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="950748129861948">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="369656277765718" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Planta&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="210791722402907" type="PortraitP3">
+                                    <param id="0" name="Frame number">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="538076114859605">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="260790005959726" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Camaleon&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="245138603392491" type="PortraitP3">
+                                    <param id="0" name="Frame number">11</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="806954281501766">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="788697372874170" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Acido&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="825396076659559" type="PortraitP3">
+                                    <param id="0" name="Frame number">12</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="659538238729996">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="201477267584580" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Slime&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="938002894832811" type="PortraitP3">
+                                    <param id="0" name="Frame number">13</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="728918757878561">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="903120752799332" type="Player3">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Metal&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="116102534711530" type="PortraitP3">
+                                    <param id="0" name="Frame number">14</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="616602733034767" title="Player4">
+                    <sub-events>
+                        <event-block sid="845777658551301">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="686948939366037" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Fuego&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="451144448917365" type="PortraitP4">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="384346397635812">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="999868337570396" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Agua&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="583700769653531" type="PortraitP4">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="308356578310831">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="591430953755466" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Aire&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="926683301331721" type="PortraitP4">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="575291839536452">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="833556060766043" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Tierra&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="486441743444219" type="PortraitP4">
+                                    <param id="0" name="Frame number">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="253618058375411">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="864452980463936" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Trueno&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="170872619575170" type="PortraitP4">
+                                    <param id="0" name="Frame number">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="364819201277432">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="109007031070473" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Hielo&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="736522170001769" type="PortraitP4">
+                                    <param id="0" name="Frame number">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="555097239369076">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="244215262678367" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Luz&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="415651965468043" type="PortraitP4">
+                                    <param id="0" name="Frame number">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="646897411707459">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="835949648643536" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Oscuridad&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="183490672678567" type="PortraitP4">
+                                    <param id="0" name="Frame number">7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="288205327595706">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="555822011698831" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Fantasma&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="446364077557401" type="PortraitP4">
+                                    <param id="0" name="Frame number">8</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="614710026413523">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="303359861123435" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Musical&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="642103433947579" type="PortraitP4">
+                                    <param id="0" name="Frame number">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="724225024659976">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="153397523595236" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Planta&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="132444922288707" type="PortraitP4">
+                                    <param id="0" name="Frame number">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="880831105373541">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="611966757988072" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Camaleon&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="650515309618177" type="PortraitP4">
+                                    <param id="0" name="Frame number">11</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="839870179241933">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="695822296505787" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Acido&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="668113869710695" type="PortraitP4">
+                                    <param id="0" name="Frame number">12</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="489019532621952">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="901460451879375" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Slime&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="432556435190891" type="PortraitP4">
+                                    <param id="0" name="Frame number">13</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="873150657273019">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="826041522041514" type="Player4">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Metal&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="657167526524407" type="PortraitP4">
+                                    <param id="0" name="Frame number">14</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

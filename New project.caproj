@@ -1315,6 +1315,402 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-folder name="Lifebars">
+            <object-type name="P1LifebarCache" sid="204235595046623">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="541660630535736" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P1LifebarCache2" sid="327264730463436">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382264971635791" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726562" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P1LifebarHalf" sid="542145447350886">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589091788979508" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf2.png">
+                            <collision-poly>
+                                <point x="0.296875" y="0.148438" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="1" y="0" />
+                                <point x="0.273438" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0.296875" y="0.851563" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P1LifebarHalf2" sid="103513908682369">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367182521010689" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf2.png">
+                            <collision-poly>
+                                <point x="0.296875" y="0.148438" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="1" y="0" />
+                                <point x="0.273438" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0.296875" y="0.851563" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P2LifebarCache" sid="765459055740572">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="450024741009150" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P2LifebarCache2" sid="862585091515651">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="822800329542616" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P2LifebarHalf" sid="759847520179602">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479785621840939" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf2.png">
+                            <collision-poly>
+                                <point x="0.296875" y="0.148438" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="1" y="0" />
+                                <point x="0.273438" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0.296875" y="0.851563" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P2LifebarHalf2" sid="348454070696407">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708825970187655" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf2.png">
+                            <collision-poly>
+                                <point x="0.296875" y="0.148438" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="1" y="0" />
+                                <point x="0.273438" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0.296875" y="0.851563" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P3LifebarCache" sid="261764185096342">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255477377114064" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P3LifebarCache2" sid="329588909857998">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700437292434330" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P3LifebarHalf" sid="607905514030997">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540047639163339" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf2.png">
+                            <collision-poly>
+                                <point x="0.296875" y="0.148438" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="1" y="0" />
+                                <point x="0.273438" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0.296875" y="0.851563" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P3LifebarHalf2" sid="457393159910291">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635155972584067" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf2.png">
+                            <collision-poly>
+                                <point x="0.296875" y="0.148438" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="1" y="0" />
+                                <point x="0.273438" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0.296875" y="0.851563" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P4LifebarCache" sid="113513450576937">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="112698024610844" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P4LifebarCache2" sid="367606483657359">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="336481463482851" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P4LifebarHalf" sid="135614110998074">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663134040285360" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf2.png">
+                            <collision-poly>
+                                <point x="0.296875" y="0.148438" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="1" y="0" />
+                                <point x="0.273438" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0.296875" y="0.851563" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P4LifebarHalf2" sid="538962498780815">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232359150266661" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf2.png">
+                            <collision-poly>
+                                <point x="0.296875" y="0.148438" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="1" y="0" />
+                                <point x="0.273438" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0.296875" y="0.851563" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Portraits">
+            <object-type name="PortraitP1" sid="221346808879149">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="485015649695840" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\diego\Desktop\Personaje_Fuego_DS.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PortraitP2" sid="301274878690884">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234897338520814" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\diego\Desktop\Personaje_Fuego_DS.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PortraitP3" sid="827772558664472">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="420058783817141" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\diego\Desktop\Personaje_Fuego_DS.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PortraitP4" sid="320861405322513">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382157281525736" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\diego\Desktop\Personaje_Fuego_DS.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Camara" sid="868670560047614">
             <plugin id="Sprite" />
             <instance-variables>
@@ -1355,6 +1751,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Puas" sid="886343971822319">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589261492284587" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Players" plugin-id="Sprite" sid="593276310540039">
@@ -1370,6 +1774,10 @@
                 <instance-variable name="InputGroup" sid="692380300516335" type="string" />
                 <instance-variable name="NumX" sid="233050617179914" type="number" />
                 <instance-variable name="NumY" sid="565563619551992" type="number" />
+                <instance-variable name="VidaActual" sid="471541771535121" type="number" />
+                <instance-variable name="VidaMaxima" sid="930011168357983" type="number" />
+                <instance-variable name="Porcentaje" sid="780352650756537" type="number" />
+                <instance-variable name="Resto" sid="861893475462022" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="CustomMovement" sid="481838044988093">
