@@ -516,7 +516,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="598969716014943" title="Portraits">
+        <event-group bookmark="1" description="" sid="598969716014943" title="Portraits">
             <sub-events>
                 <event-group description="" sid="961055357832084" title="Player1">
                     <sub-events>
