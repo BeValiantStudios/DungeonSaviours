@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eMain</name>
     <events>
+        <variable constant="1" name="DICCID" sid="471394570163611" static="0" type="text">{&quot;c2dictionary&quot;:true,&quot;data&quot;:{&quot;Fuego&quot;:&quot;0&quot;,&quot;Agua&quot;:&quot;1&quot;,&quot;Aire&quot;:&quot;2&quot;,&quot;Tierra&quot;:&quot;3&quot;,&quot;Trueno&quot;:&quot;4&quot;,&quot;Hielo&quot;:&quot;5&quot;,&quot;Luz&quot;:&quot;6&quot;,&quot;Oscuridad&quot;:&quot;7&quot;,&quot;Fantasma&quot;:&quot;8&quot;,&quot;Musical&quot;:&quot;9&quot;,&quot;Planta&quot;:&quot;10&quot;,&quot;Camaleon&quot;:&quot;11&quot;,&quot;Acido&quot;:&quot;12&quot;,&quot;Slime&quot;:&quot;13&quot;,&quot;Metal&quot;:&quot;14&quot;}}</variable>
         <include>ePlayers</include>
         <include>eHud</include>
         <include>eFunctions</include>
@@ -20,11 +21,35 @@
                 <condition id="-2" name="On start of layout" sid="948478148305428" type="System" />
             </conditions>
             <actions>
+                <action id="4" name="Load" sid="883294184958814" type="CharacterID">
+                    <param id="0" name="JSON">DICCID</param>
+                </action>
                 <action id="0" name="Call function" sid="869864323757580" type="f">
                     <param id="0" name="Name">&quot;ActPlayers&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
+                <action id="0" name="Call function" sid="109887369499335" type="f">
+                    <param id="0" name="Name">&quot;ActPortraits&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="483619631040306">
+                    <conditions>
+                        <condition id="-10" name="For" sid="911411457409209" type="System">
+                            <param id="0" name="Name">&quot;Call&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="697914846784949" type="f">
+                            <param id="0" name="Name">&quot;Lifebar.Update&quot;</param>
+                            <param id="1" name="Parameter {n}">loopindex(&quot;Call&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-group description="" sid="544789076177150" title="Miscelaneos">
             <sub-events>

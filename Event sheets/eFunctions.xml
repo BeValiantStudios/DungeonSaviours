@@ -94,6 +94,15 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="404037125982789">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Call function" sid="865574498062010" type="f">
+                            <param id="0" name="Name">&quot;ActPortraits&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <comment>// Actualiza listas de player.uid para su uso</comment>
@@ -210,7 +219,7 @@
                             </conditions>
                             <actions>
                                 <action id="-12" name="Set group active" sid="315136621798008" type="System">
-                                    <param id="0" name="Group name">Players.InputGroup</param>
+                                    <param id="0" name="Group name">&quot;Input Player &quot; &amp; Players.Id</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                                 <action behavior="CustomMovement" id="12" name="Set enabled" sid="200862565672249" type="Players">
@@ -224,7 +233,7 @@
                             </conditions>
                             <actions>
                                 <action id="-12" name="Set group active" sid="427248482583727" type="System">
-                                    <param id="0" name="Group name">Players.InputGroup</param>
+                                    <param id="0" name="Group name">&quot;Input Player &quot; &amp; Players.Id</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action behavior="CustomMovement" id="12" name="Set enabled" sid="377305804605491" type="Players">
@@ -282,6 +291,223 @@
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="722368578907277">
+            <conditions>
+                <condition id="0" name="On function" sid="477374860021463" type="f">
+                    <param id="0" name="Name">&quot;ActPortraits&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="319393495142879">
+                    <conditions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="533048055213735" type="PortraitP1">
+                            <param id="0" name="Frame number">int(CharacterID.Get(Player1.Character))</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="571801370231594" type="PortraitP2">
+                            <param id="0" name="Frame number">int(CharacterID.Get(Player2.Character))</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="168201329134567" type="PortraitP3">
+                            <param id="0" name="Frame number">int(CharacterID.Get(Player3.Character))</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="496256096888496" type="PortraitP4">
+                            <param id="0" name="Frame number">int(CharacterID.Get(Player4.Character))</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="280350645151730">
+            <conditions>
+                <condition id="0" name="On function" sid="661207798846674" type="f">
+                    <param id="0" name="Name">&quot;Lifebar.Update&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="609518198515259">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="324498968589360" type="f">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="177773322421279">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="366101386656832" type="Player1">
+                                    <param id="0" name="Instance variable">VidaMaxima</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">50+Self.VidaActual</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="604273216148891" type="P1LifebarCache">
+                                    <param id="0" name="Angle">(Player1.VidaMaxima-Player1.VidaActual)*3.6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="310408304503772" type="P1LifebarCache2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="239744015901504">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="418595417956582" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="916223070629122" type="P1LifebarCache">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="533996995707994" type="P1LifebarCache2">
+                                    <param id="0" name="Angle">(Player1.VidaMaxima-Player1.VidaActual)*3.6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="259355905994263" type="P1LifebarCache2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="752937838219485">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="384407108615740" type="f">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="967502739230220">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="213663919429185" type="Player2">
+                                    <param id="0" name="Instance variable">VidaMaxima</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">50+Self.VidaActual</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="605088746059930" type="P2LifebarCache">
+                                    <param id="0" name="Angle">(Player2.VidaMaxima-Player2.VidaActual)*3.6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="456496409219638" type="P2LifebarCache2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="492345053069178">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="574036662719836" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="422223902755071" type="P2LifebarCache">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="384627773543928" type="P2LifebarCache2">
+                                    <param id="0" name="Angle">(Player2.VidaMaxima-Player2.VidaActual)*3.6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="640614221347348" type="P2LifebarCache2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="146899087131607">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="489557960033659" type="f">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="417972603426855">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="360560188093744" type="Player3">
+                                    <param id="0" name="Instance variable">VidaMaxima</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">50+Self.VidaActual</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="563514782260509" type="P3LifebarCache">
+                                    <param id="0" name="Angle">(Player3.VidaMaxima-Player3.VidaActual)*3.6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="622973682394752" type="P3LifebarCache2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="397982512599510">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="289242564454350" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="954495452674696" type="P3LifebarCache">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="718668469242944" type="P3LifebarCache2">
+                                    <param id="0" name="Angle">(Player3.VidaMaxima-Player3.VidaActual)*3.6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="399499598280863" type="P3LifebarCache2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="111489350613888">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="658929228959641" type="f">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="264654599492783">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="853372728689560" type="Player4">
+                                    <param id="0" name="Instance variable">VidaMaxima</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">50+Self.VidaActual</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="796122621135058" type="P4LifebarCache">
+                                    <param id="0" name="Angle">(Player4.VidaMaxima-Player4.VidaActual)*3.6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="570900278937381" type="P4LifebarCache2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="958444686470139">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="236118797050485" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="612095778512198" type="P4LifebarCache">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="580635307703772" type="P4LifebarCache2">
+                                    <param id="0" name="Angle">(Player4.VidaMaxima-Player4.VidaActual)*3.6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="864486013829949" type="P4LifebarCache2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
