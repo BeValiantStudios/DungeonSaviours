@@ -1770,6 +1770,7 @@
                 <member>Player4</member>
             </members>
             <instance-variables>
+                <instance-variable name="Id" sid="433048055539937" type="number" />
                 <instance-variable name="Active" sid="811185679275543" type="boolean" />
                 <instance-variable name="Character" sid="570346294991843" type="string" />
                 <instance-variable name="InputGroup" sid="692380300516335" type="string" />

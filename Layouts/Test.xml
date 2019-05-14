@@ -78,6 +78,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <Id>1</Id>
                         <Active>true</Active>
                         <Character>Fuego</Character>
                         <InputGroup>Input Player 1</InputGroup>
@@ -284,6 +285,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <Id>2</Id>
                         <Active>false</Active>
                         <Character>Agua</Character>
                         <InputGroup>Input Player 2</InputGroup>
@@ -338,6 +340,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <Id>3</Id>
                         <Active>false</Active>
                         <Character>Tierra</Character>
                         <InputGroup>Input Player 3</InputGroup>
@@ -392,6 +395,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <Id>4</Id>
                         <Active>false</Active>
                         <Character>Aire</Character>
                         <InputGroup>Input Player 4</InputGroup>

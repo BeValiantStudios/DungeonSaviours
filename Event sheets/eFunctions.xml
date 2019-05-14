@@ -118,7 +118,7 @@
                     <conditions>
                         <condition id="-24" name="For Each (ordered)" sid="449787315962665" type="System">
                             <param id="0" name="Object">Players</param>
-                            <param id="1" name="Expression">int(right(Players.InputGroup,1))</param>
+                            <param id="1" name="Expression">Players.Id</param>
                             <param id="2" name="Order">0</param>
                         </condition>
                     </conditions>
@@ -133,6 +133,11 @@
                             <conditions>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="113193345067660" type="Players">
                                     <param id="0" name="Instance variable">Active</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="536953129182405" type="Players">
+                                    <param id="0" name="Instance variable">VidaActual</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -237,7 +242,12 @@
                     <param id="0" name="Name">&quot;IntercambioRapido&quot;</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Call function" sid="255833357758370" type="f">
+                    <param id="0" name="Name">&quot;ActUIDS&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="826016094510867">
                     <conditions>

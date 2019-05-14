@@ -1459,6 +1459,10 @@
                     <param id="0" name="Group name">&quot;Input Player 1&quot;</param>
                     <param id="1" name="State">0</param>
                 </action>
+                <action id="0" name="Call function" sid="416869730727218" type="f">
+                    <param id="0" name="Name">&quot;ActUIDS&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="666849104130106">
