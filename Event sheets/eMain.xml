@@ -43,19 +43,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="346961114191768">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="437141071355984" type="kb">
-                            <param id="0" name="Key">48</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="909820499568778" type="f">
-                            <param id="0" name="Name">&quot;IntercambioRapido&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
     </events>

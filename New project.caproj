@@ -22,6 +22,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -1785,6 +1786,9 @@
                 </behavior-type>
                 <behavior-type name="8Direcciones" sid="102968325859455">
                     <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="302397144691245">
+                    <behavior id="Timer" />
                 </behavior-type>
             </behaviors>
         </family>
