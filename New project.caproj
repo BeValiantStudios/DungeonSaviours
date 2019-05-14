@@ -27,7 +27,9 @@
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="setcolor">Set color</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -1792,6 +1794,23 @@
                     <behavior id="Timer" />
                 </behavior-type>
             </behaviors>
+        </family>
+        <family name="LifeColor" plugin-id="Sprite" sid="454462834529460">
+            <members>
+                <member>P1LifebarCache</member>
+                <member>P1LifebarCache2</member>
+                <member>P2LifebarCache</member>
+                <member>P2LifebarCache2</member>
+                <member>P3LifebarCache</member>
+                <member>P3LifebarCache2</member>
+                <member>P4LifebarCache</member>
+                <member>P4LifebarCache2</member>
+            </members>
+            <effects>
+                <effect-type name="SetColor">
+                    <effect id="setcolor" />
+                </effect-type>
+            </effects>
         </family>
     </families>
     <layout-folder>
