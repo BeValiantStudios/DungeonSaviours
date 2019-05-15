@@ -511,5 +511,32 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="569799781027042">
+            <conditions>
+                <condition id="0" name="On function" sid="990534684080610" type="f">
+                    <param id="0" name="Name">&quot;GetDMG&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="302973695898357">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="242119400431439" type="Players">
+                            <param id="0" name="Unique ID">f.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="284048596511095" type="Players">
+                            <param id="0" name="Instance variable">VidaActual</param>
+                            <param id="1" name="Value">f.Param(1)</param>
+                        </action>
+                        <action id="0" name="Call function" sid="476022601397079" type="f">
+                            <param id="0" name="Name">&quot;Lifebar.Update&quot;</param>
+                            <param id="1" name="Parameter {n}">Players.Id</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

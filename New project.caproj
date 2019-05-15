@@ -2,11 +2,11 @@
 <c2project>
     <name>New project</name>
     <description></description>
-    <version>1.0.0.0</version>
-    <author></author>
+    <version>0.1.9</version>
+    <author>Chronosphere Studio</author>
     <author-email></author-email>
     <author-website>http://</author-website>
-    <app-id>com.mycompany.myapp</app-id>
+    <app-id>com.chronosphere.myapp</app-id>
     <unique-id>3sy6iiw7nd6ah</unique-id>
     <saved-with-version>26900</saved-with-version>
     <used-plugins>
@@ -1815,9 +1815,9 @@
             </members>
             <instance-variables>
                 <instance-variable name="Id" sid="433048055539937" type="number" />
-                <instance-variable name="Active" sid="811185679275543" type="boolean" />
                 <instance-variable name="Character" sid="570346294991843" type="string" />
-                <instance-variable name="InputGroup" sid="692380300516335" type="string" />
+                <instance-variable name="Active" sid="811185679275543" type="boolean" />
+                <instance-variable name="Estado" sid="692380300516335" type="string" />
                 <instance-variable name="NumX" sid="233050617179914" type="number" />
                 <instance-variable name="NumY" sid="565563619551992" type="number" />
                 <instance-variable name="VidaActual" sid="471541771535121" type="number" />

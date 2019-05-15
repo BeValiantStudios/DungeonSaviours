@@ -3,6 +3,25 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eHud</name>
     <events>
+        <event-block sid="134494441886806">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="219544260152185" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="748005579493341" type="P1LifebarCache2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="760041848123308" type="P2LifebarCache2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="970721945228320" type="P3LifebarCache2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="740985584294486" type="P4LifebarCache2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>// Player animation name</comment>
         <event-block sid="317767263355282">
             <conditions>
@@ -64,25 +83,6 @@
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="134494441886806">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="219544260152185" type="System" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="748005579493341" type="P1LifebarCache2">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="760041848123308" type="P2LifebarCache2">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="970721945228320" type="P3LifebarCache2">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="740985584294486" type="P4LifebarCache2">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>

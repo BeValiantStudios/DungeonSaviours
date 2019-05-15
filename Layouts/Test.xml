@@ -174,9 +174,9 @@
                     </properties>
                     <instance-variables>
                         <Id>1</Id>
-                        <Active>true</Active>
                         <Character>Fuego</Character>
-                        <InputGroup>Input Player 1</InputGroup>
+                        <Active>true</Active>
+                        <Estado>Input Player 1</Estado>
                         <NumX>0</NumX>
                         <NumY>0</NumY>
                         <VidaActual>100</VidaActual>
@@ -379,9 +379,9 @@
                     </properties>
                     <instance-variables>
                         <Id>2</Id>
-                        <Active>false</Active>
                         <Character>Agua</Character>
-                        <InputGroup>Input Player 2</InputGroup>
+                        <Active>false</Active>
+                        <Estado>Input Player 2</Estado>
                         <NumX>-50</NumX>
                         <NumY>-50</NumY>
                         <VidaActual>100</VidaActual>
@@ -432,9 +432,9 @@
                     </properties>
                     <instance-variables>
                         <Id>3</Id>
-                        <Active>false</Active>
                         <Character>Tierra</Character>
-                        <InputGroup>Input Player 3</InputGroup>
+                        <Active>false</Active>
+                        <Estado>Input Player 3</Estado>
                         <NumX>-50</NumX>
                         <NumY>50</NumY>
                         <VidaActual>100</VidaActual>
@@ -485,9 +485,9 @@
                     </properties>
                     <instance-variables>
                         <Id>4</Id>
-                        <Active>false</Active>
                         <Character>Aire</Character>
-                        <InputGroup>Input Player 4</InputGroup>
+                        <Active>false</Active>
+                        <Estado>Input Player 4</Estado>
                         <NumX>50</NumX>
                         <NumY>50</NumY>
                         <VidaActual>100</VidaActual>

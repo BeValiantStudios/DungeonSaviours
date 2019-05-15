@@ -3,12 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eMain</name>
     <events>
-        <variable constant="1" name="DICCID" sid="471394570163611" static="0" type="text">{&quot;c2dictionary&quot;:true,&quot;data&quot;:{&quot;Fuego&quot;:&quot;0&quot;,&quot;Agua&quot;:&quot;1&quot;,&quot;Aire&quot;:&quot;2&quot;,&quot;Tierra&quot;:&quot;3&quot;,&quot;Trueno&quot;:&quot;4&quot;,&quot;Hielo&quot;:&quot;5&quot;,&quot;Luz&quot;:&quot;6&quot;,&quot;Oscuridad&quot;:&quot;7&quot;,&quot;Fantasma&quot;:&quot;8&quot;,&quot;Musical&quot;:&quot;9&quot;,&quot;Planta&quot;:&quot;10&quot;,&quot;Camaleon&quot;:&quot;11&quot;,&quot;Acido&quot;:&quot;12&quot;,&quot;Slime&quot;:&quot;13&quot;,&quot;Metal&quot;:&quot;14&quot;}}</variable>
         <include>ePlayers</include>
         <include>eHud</include>
         <include>eFunctions</include>
         <include>eEnemies</include>
         <include>eCamera</include>
+        <variable constant="1" name="DICCID" sid="471394570163611" static="0" type="text">{&quot;c2dictionary&quot;:true,&quot;data&quot;:{&quot;Fuego&quot;:&quot;0&quot;,&quot;Agua&quot;:&quot;1&quot;,&quot;Aire&quot;:&quot;2&quot;,&quot;Tierra&quot;:&quot;3&quot;,&quot;Trueno&quot;:&quot;4&quot;,&quot;Hielo&quot;:&quot;5&quot;,&quot;Luz&quot;:&quot;6&quot;,&quot;Oscuridad&quot;:&quot;7&quot;,&quot;Fantasma&quot;:&quot;8&quot;,&quot;Musical&quot;:&quot;9&quot;,&quot;Planta&quot;:&quot;10&quot;,&quot;Camaleon&quot;:&quot;11&quot;,&quot;Acido&quot;:&quot;12&quot;,&quot;Slime&quot;:&quot;13&quot;,&quot;Metal&quot;:&quot;14&quot;}}</variable>
         <variable constant="0" name="Players" sid="647461634613002" static="0" type="number">1</variable>
         <variable constant="0" name="CamaraY" sid="842681762685761" static="0" type="number">0</variable>
         <variable constant="0" name="CamaraX" sid="344271387424808" static="0" type="number">0</variable>
