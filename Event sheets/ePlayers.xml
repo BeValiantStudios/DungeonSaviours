@@ -113,6 +113,10 @@
                                     <param id="0" name="Instance variable">VidaActual</param>
                                     <param id="1" name="Value">(Players.VidaMaxima/10)*3</param>
                                 </action>
+                                <action id="0" name="Call function" sid="370043860747709" type="f">
+                                    <param id="0" name="Name">&quot;Lifebar.Update&quot;</param>
+                                    <param id="1" name="Parameter {n}">Players.Id</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -647,6 +651,23 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="884090152370609">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="205826913686229" type="Players">
+                    <param id="0" name="Instance variable">Estado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Alive&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direcciones" id="8" name="Set enabled" sid="621305564549849" type="Players">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="169014610678177" type="Players">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
