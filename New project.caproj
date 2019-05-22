@@ -1895,6 +1895,182 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="P1LifebarDegrade" sid="245206265995198">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Degrade" sid="136407571146192" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="221898553179620" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P1LifebarDegrade2" sid="725262826626056">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Degrade" sid="477953050684097" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="375920717539352" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726562" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P2LifebarDegrade" sid="684727747202852">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Degrade" sid="127564889158543" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="314033912489939" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P2LifebarDegrade2" sid="442373225666948">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Degrade" sid="878339270246830" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812871057163692" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726562" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P3LifebarDegrade" sid="607473239646470">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Degrade" sid="583522429223727" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="798110981865324" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P3LifebarDegrade2" sid="530740413044844">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Degrade" sid="234338590146340" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="399160013232389" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726562" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P4LifebarDegrade" sid="958896179809881">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Degrade" sid="330145919137231" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="251470900893054" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726563" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P4LifebarDegrade2" sid="968408329870203">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Degrade" sid="105677255803909" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626650617578720" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\diego\Desktop\LifebarHalf.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="0.703125" y="0.851563" />
+                                <point x="0.5" y="0.933594" />
+                                <point x="0" y="1" />
+                                <point x="0.726562" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.0664063" />
+                                <point x="0.703125" y="0.148438" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Portraits">
             <object-type name="PortraitP1" sid="221346808879149">
@@ -2109,12 +2285,20 @@
             <members>
                 <member>P1LifebarCache</member>
                 <member>P1LifebarCache2</member>
+                <member>P1LifebarDegrade</member>
+                <member>P1LifebarDegrade2</member>
                 <member>P2LifebarCache</member>
                 <member>P2LifebarCache2</member>
+                <member>P2LifebarDegrade</member>
+                <member>P2LifebarDegrade2</member>
                 <member>P3LifebarCache</member>
                 <member>P3LifebarCache2</member>
+                <member>P3LifebarDegrade</member>
+                <member>P3LifebarDegrade2</member>
                 <member>P4LifebarCache</member>
                 <member>P4LifebarCache2</member>
+                <member>P4LifebarDegrade</member>
+                <member>P4LifebarDegrade2</member>
             </members>
             <effects>
                 <effect-type name="SetColor">

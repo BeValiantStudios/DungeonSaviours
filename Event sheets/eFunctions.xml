@@ -354,6 +354,9 @@
                                 <action id="-15" name="Set visible" sid="310408304503772" type="P1LifebarCache2">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="118581144085106" type="P1LifebarDegrade2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="239744015901504">
@@ -397,6 +400,9 @@
                                     <param id="0" name="Angle">(Player2.VidaMaxima-Player2.VidaActual)*3.6</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="456496409219638" type="P2LifebarCache2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="435466185120467" type="P2LifebarDegrade2">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -444,6 +450,9 @@
                                 <action id="-15" name="Set visible" sid="622973682394752" type="P3LifebarCache2">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="448796753109652" type="P3LifebarDegrade2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="397982512599510">
@@ -487,6 +496,9 @@
                                     <param id="0" name="Angle">(Player4.VidaMaxima-Player4.VidaActual)*3.6</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="570900278937381" type="P4LifebarCache2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="423570981982894" type="P4LifebarDegrade2">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -538,5 +550,421 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-group description="" sid="499485337665723" title="DegradeP1">
+            <sub-events>
+                <event-block sid="803247244183780">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="654040315376215" type="P1LifebarDegrade2">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">P1LifebarCache2.Angle</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="563693810436924">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="130320253169230" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="114848515923083" type="P1LifebarDegrade2">
+                                    <param id="0" name="Instance variable">Degrade</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="812931441192889" type="P1LifebarDegrade2">
+                                    <param id="0" name="Angle">P1LifebarDegrade2.Degrade</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="502408427319663">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="556848628951951" type="P1LifebarDegrade2">
+                                    <param id="0" name="Instance variable">Degrade</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">180</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="361563760263314" type="P1LifebarDegrade2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="652353245670402">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="491637096606419" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="103015621923226" type="P1LifebarDegrade2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="454788991957946">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="878300200060912" type="P1LifebarDegrade">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">P1LifebarCache.Angle</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="602369092194196">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="398038479831380" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="543781135839003" type="P1LifebarDegrade">
+                                    <param id="0" name="Instance variable">Degrade</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="802525061045098" type="P1LifebarDegrade">
+                                    <param id="0" name="Angle">P1LifebarDegrade.Degrade</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="565941210809590">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="814019091574807" type="P1LifebarDegrade">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">360</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="574156373223071" type="P1LifebarDegrade">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="679361314833260">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="483706929082398" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="396592204575916" type="P1LifebarDegrade">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="554897925225157" title="DegradeP2">
+            <sub-events>
+                <event-block sid="931990842859677">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="995644018424131" type="P2LifebarDegrade2">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">P2LifebarCache2.Angle</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="539978076704360">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="763880307807571" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="207192653601806" type="P2LifebarDegrade2">
+                                    <param id="0" name="Instance variable">Degrade</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="674252475750252" type="P2LifebarDegrade2">
+                                    <param id="0" name="Angle">P2LifebarDegrade2.Degrade</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="612525340216396">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="353106690514102" type="P2LifebarDegrade2">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="739902445150265" type="P2LifebarDegrade2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="688034089778208">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="278971728429197" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="457617034591136" type="P2LifebarDegrade2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="605797615725038">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="790920108612145" type="P2LifebarDegrade">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">P2LifebarCache.Angle</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="855595980501330">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="163424778275156" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="234651717062247" type="P2LifebarDegrade">
+                                    <param id="0" name="Instance variable">Degrade</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="345119072368378" type="P2LifebarDegrade">
+                                    <param id="0" name="Angle">P2LifebarDegrade.Degrade</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="713728966481650">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="939356494737611" type="P2LifebarDegrade">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">360</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="254674716909398" type="P2LifebarDegrade">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="532357876524844">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="171419775193350" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="924108125136314" type="P2LifebarDegrade">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="878899238907188" title="DegradeP3">
+            <sub-events>
+                <event-block sid="697827977962709">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="745494047081054" type="P3LifebarDegrade2">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">P3LifebarCache2.Angle</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="345260584351209">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="958795546410428" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="272081117406444" type="P3LifebarDegrade2">
+                                    <param id="0" name="Instance variable">Degrade</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="798163203955462" type="P3LifebarDegrade2">
+                                    <param id="0" name="Angle">P3LifebarDegrade2.Degrade</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="799167926124081">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="925242651581446" type="P3LifebarDegrade2">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="362959281110531" type="P3LifebarDegrade2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="144904098016765">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="838006291666993" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="664038326655956" type="P3LifebarDegrade2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="494784087756344">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="939424748217503" type="P3LifebarDegrade">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">P3LifebarCache.Angle</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="866309035383174">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="366793632396803" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="743785037026379" type="P3LifebarDegrade">
+                                    <param id="0" name="Instance variable">Degrade</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="491138234678515" type="P3LifebarDegrade">
+                                    <param id="0" name="Angle">P3LifebarDegrade.Degrade</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="107747822425712">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="383879774936122" type="P3LifebarDegrade">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">360</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="898599283897393" type="P3LifebarDegrade">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="615173016153666">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="935933689249845" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="635294056467231" type="P3LifebarDegrade">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="221642464227925" title="DegradeP4">
+            <sub-events>
+                <event-block sid="304199403176875">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="992963753619260" type="P4LifebarDegrade2">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">P4LifebarCache2.Angle</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="514922429236960">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="169963332193219" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="474650931300430" type="P4LifebarDegrade2">
+                                    <param id="0" name="Instance variable">Degrade</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="913604198892097" type="P4LifebarDegrade2">
+                                    <param id="0" name="Angle">P4LifebarDegrade2.Degrade</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="369442236930055">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="382479007974897" type="P4LifebarDegrade2">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="142449537551096" type="P4LifebarDegrade2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="969904369530566">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="937130928513577" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="471263280603439" type="P4LifebarDegrade2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="453289803315056">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="719576096671352" type="P4LifebarDegrade">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">P4LifebarCache.Angle</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="115168526224481">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="547814849227281" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="517972506162996" type="P4LifebarDegrade">
+                                    <param id="0" name="Instance variable">Degrade</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="220362970700132" type="P4LifebarDegrade">
+                                    <param id="0" name="Angle">P4LifebarDegrade.Degrade</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="351715332211632">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="762760028507424" type="P4LifebarDegrade">
+                            <param id="0" name="Instance variable">Degrade</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">360</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="288405320606652" type="P4LifebarDegrade">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="933454810958318">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="221943182941126" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="366303188512282" type="P4LifebarDegrade">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
