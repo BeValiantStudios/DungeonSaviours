@@ -99,6 +99,24 @@
                         <animation framecount="1" loop="0" name="FuegoWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="820166590515085" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
+                        <animation framecount="1" loop="0" name="FuegoIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="153885158427551" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="178917746889170" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="151525648563777" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="854992746547377" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="851964578658815" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FuegoIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="110958189841876" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
                     </animation-folder>
                     <animation-folder name="Agua">
                         <animation framecount="1" loop="0" name="AguaWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="953588005759710" speed="5">
@@ -117,6 +135,24 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                         <animation framecount="1" loop="0" name="AguaWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="354922611487131" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="425684722934616" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="640082605771055" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="526988639341187" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="351649354726242" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="479578480029635" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AguaIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="187470087970276" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
@@ -139,6 +175,24 @@
                         <animation framecount="1" loop="0" name="AireWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="508499571839452" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
+                        <animation framecount="1" loop="0" name="AireIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="175732688199850" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AireIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="715289872625874" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AireIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="921346489866092" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AireIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="394169271151670" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AireIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="669251478077186" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AireIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="238573291917153" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
                     </animation-folder>
                     <animation-folder name="Tierra">
                         <animation framecount="1" loop="0" name="TierraWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="659590464603788" speed="5">
@@ -157,6 +211,24 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                         <animation framecount="1" loop="0" name="TierraWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="356916744635017" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TierraIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="760948576270745" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TierraIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="544712785688018" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TierraIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="725843757715336" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TierraIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="592766745926407" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TierraIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="425914489906320" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TierraIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="557081923446828" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
@@ -179,6 +251,24 @@
                         <animation framecount="1" loop="0" name="TruenoWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="392534401721289" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
+                        <animation framecount="1" loop="0" name="TruenoIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="327997877715688" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TruenoIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="908465319610554" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TruenoIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="221782851392588" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TruenoIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="178911243634220" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TruenoIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="968656432405920" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="TruenoIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="472301966699326" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
                     </animation-folder>
                     <animation-folder name="Hielo">
                         <animation framecount="1" loop="0" name="HieloWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="873143232882078" speed="5">
@@ -197,6 +287,24 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                         <animation framecount="1" loop="0" name="HieloWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="562000282397046" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="HieloIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="843895597181807" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="HieloIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="167301489192170" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="HieloIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="612537412417971" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="HieloIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="596320701924704" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="HieloIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="265862622980234" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="HieloIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="931165222230210" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
@@ -219,6 +327,24 @@
                         <animation framecount="1" loop="0" name="LuzWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="210902685910410" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
+                        <animation framecount="1" loop="0" name="LuzIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="347491487775804" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="LuzIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="642440105522362" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="LuzIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="303125549961756" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="LuzIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="872039161467828" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="LuzIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="746105248905018" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="LuzIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="690553795611128" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
                     </animation-folder>
                     <animation-folder name="Oscuridad">
                         <animation framecount="1" loop="0" name="OscuridadWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="543468923200822" speed="5">
@@ -237,6 +363,24 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                         <animation framecount="1" loop="0" name="OscuridadWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="791023978055989" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="OscuridadIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="778178419752254" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="OscuridadIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="570746684692935" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="OscuridadIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="248320514731832" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="OscuridadIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="778671481811727" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="OscuridadIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="184524500217912" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="OscuridadIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="875331441373201" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
@@ -259,6 +403,24 @@
                         <animation framecount="1" loop="0" name="FantasmaWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="314929913163623" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
+                        <animation framecount="1" loop="0" name="FantasmaIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="685197568948540" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FantasmaIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="181496422471666" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FantasmaIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="375889936875531" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FantasmaIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="461419296084422" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FantasmaIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="382876610760177" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="FantasmaIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="731635554100813" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
                     </animation-folder>
                     <animation-folder name="Musical">
                         <animation framecount="1" loop="0" name="MusicalWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="727728874332425" speed="5">
@@ -277,6 +439,24 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                         <animation framecount="1" loop="0" name="MusicalWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="234137653106447" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MusicalIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="748864997592119" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MusicalIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="574998848410806" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MusicalIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="192217596553459" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MusicalIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="965572837025053" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MusicalIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="495952248089195" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MusicalIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="722035313366661" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
@@ -299,6 +479,24 @@
                         <animation framecount="1" loop="0" name="PlantaWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="498057403088571" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
+                        <animation framecount="1" loop="0" name="PlantaIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="312970340480180" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="PlantaIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="625365021769203" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="PlantaIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="465995793319898" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="PlantaIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="472081150006670" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="PlantaIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="989514676675413" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="PlantaIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="116974019934653" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
                     </animation-folder>
                     <animation-folder name="Camaleon">
                         <animation framecount="1" loop="0" name="CamaleonWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="810010061175590" speed="5">
@@ -317,6 +515,24 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                         <animation framecount="1" loop="0" name="CamaleonWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="926291485321659" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="CamaleonIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="985194647306133" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="CamaleonIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="169119039836164" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="CamaleonIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="865498717213819" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="CamaleonIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="891013698775162" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="CamaleonIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="896869993726966" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="CamaleonIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="637635360499268" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
@@ -339,6 +555,24 @@
                         <animation framecount="1" loop="0" name="AcidoWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="916318873564250" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
+                        <animation framecount="1" loop="0" name="AcidoIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="549090556818604" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AcidoIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="242111856814626" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AcidoIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="917191890534179" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AcidoIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="602354692415854" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AcidoIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="793176052494081" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="AcidoIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="194029937615119" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
                     </animation-folder>
                     <animation-folder name="Slime">
                         <animation framecount="1" loop="0" name="SlimeWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="340260756383512" speed="5">
@@ -359,6 +593,24 @@
                         <animation framecount="1" loop="0" name="SlimeWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="132832921472966" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
+                        <animation framecount="1" loop="0" name="SlimeIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="431913041967631" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="SlimeIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="500524162400258" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="SlimeIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="148164722138801" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="SlimeIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="358699475079040" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="SlimeIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="151379814671078" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="SlimeIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="453834584112917" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
                     </animation-folder>
                     <animation-folder name="Metal">
                         <animation framecount="1" loop="0" name="MetalWalkTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="584639106938485" speed="5">
@@ -377,6 +629,24 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                         <animation framecount="1" loop="0" name="MetalWalkBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="771889293248651" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MetalIdleTopLft" pingpong="0" repeatcount="1" repeatto="0" sid="407605309626188" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MetalIdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="745728449783030" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MetalIdleTopRgt" pingpong="0" repeatcount="1" repeatto="0" sid="309405807405642" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MetalIdleBot" pingpong="0" repeatcount="1" repeatto="0" sid="101304309523012" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MetalIdleBotLft" pingpong="0" repeatcount="1" repeatto="0" sid="611944640616990" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="MetalIdleBotRgt" pingpong="0" repeatcount="1" repeatto="0" sid="790194057855827" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
