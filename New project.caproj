@@ -11,6 +11,7 @@
     <saved-with-version>26900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -2547,6 +2548,12 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text" sid="793789083019527">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="499067544008058">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Players" plugin-id="Sprite" sid="593276310540039">
@@ -2635,6 +2642,7 @@
     <layout-folder>
         <layout>Test.xml</layout>
         <layout>Asset.xml</layout>
+        <layout>Intro.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>eMain.xml</event-sheet>
@@ -2643,6 +2651,7 @@
         <event-sheet>ePlayers.xml</event-sheet>
         <event-sheet>eFunctions.xml</event-sheet>
         <event-sheet>eHud.xml</event-sheet>
+        <event-sheet>EIntro.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="kb" uid="4" />
@@ -2653,8 +2662,24 @@
             </properties>
         </global-instance>
         <global-instance type="Mouse" uid="15" />
+        <global-instance type="Audio" uid="79">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="empezamos.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
