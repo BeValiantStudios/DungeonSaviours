@@ -118,115 +118,230 @@
                                     <param id="0" name="Name">&quot;Lifebar.Update&quot;</param>
                                     <param id="1" name="Parameter {n}">Players.Id</param>
                                 </action>
+                                <action id="0" name="Call function" sid="323096333471099" type="f">
+                                    <param id="0" name="Name">&quot;ActPlayers&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="860526414002179" title="Input Player 2">
+                <event-group description="" sid="969692722867496" title="Input Player 2">
                     <sub-events>
-                        <event-block sid="136031243842975">
+                        <event-block any="1" sid="615573406404090">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="913498574828919" type="kb">
-                                    <param id="0" name="Key">38</param>
+                                <condition id="5" name="Compare axis" sid="703900798700071" type="gp">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="721606762073057" type="Player2">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <event-block sid="122568401088345">
+                        <event-block any="1" sid="174573274402851">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="803475984957435" type="kb">
-                                    <param id="0" name="Key">40</param>
+                                <condition id="5" name="Compare axis" sid="889032684095714" type="gp">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">-50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="110721769305252" type="Player2">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <event-block sid="799704228749484">
+                        <event-block any="1" sid="141207410124933">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="422080236591179" type="kb">
-                                    <param id="0" name="Key">37</param>
+                                <condition id="5" name="Compare axis" sid="487360249335534" type="gp">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="280882677505915" type="Player2">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <event-block sid="177352364344009">
+                        <event-block any="1" sid="745627295529170">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="515596099525151" type="kb">
-                                    <param id="0" name="Key">39</param>
+                                <condition id="5" name="Compare axis" sid="165063756087286" type="gp">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">-50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="294322703803027" type="Player2">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="223343787373396">
+                            <conditions />
+                            <actions>
+                                <action behavior="CustomMovement" id="2" name="Set speed" sid="303700080988711" type="Player2">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="Speed">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="171989397593271" title="Input Player 3">
+                <event-group description="" sid="296479658721115" title="Input Player 3">
                     <sub-events>
-                        <event-block sid="723974128731103">
+                        <event-block any="1" sid="721086195195748">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="145371834190936" type="kb">
-                                    <param id="0" name="Key">73</param>
+                                <condition id="5" name="Compare axis" sid="725211222572650" type="gp">
+                                    <param id="0" name="Gamepad">1</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="250285728103253" type="Player3">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <event-block sid="430243576054326">
+                        <event-block any="1" sid="114734085121741">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="959453933622048" type="kb">
-                                    <param id="0" name="Key">75</param>
+                                <condition id="5" name="Compare axis" sid="863288191499104" type="gp">
+                                    <param id="0" name="Gamepad">1</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">-50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="214140904003030" type="Player3">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <event-block sid="584913949399611">
+                        <event-block any="1" sid="651808403055722">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="378946605618136" type="kb">
-                                    <param id="0" name="Key">74</param>
+                                <condition id="5" name="Compare axis" sid="823838969609581" type="gp">
+                                    <param id="0" name="Gamepad">1</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="108598999646626" type="Player3">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <event-block sid="101978302563648">
+                        <event-block any="1" sid="161665072466951">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="421742772295439" type="kb">
-                                    <param id="0" name="Key">76</param>
+                                <condition id="5" name="Compare axis" sid="943845093243638" type="gp">
+                                    <param id="0" name="Gamepad">1</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">-50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="807771705765995" type="Player3">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="423732105603088">
+                            <conditions />
+                            <actions>
+                                <action behavior="CustomMovement" id="2" name="Set speed" sid="834910057743113" type="Player3">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="Speed">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="308052334551043" title="Input Player 4">
+                <event-group description="" sid="419244719073201" title="Input Player 4">
                     <sub-events>
-                        <event-block sid="393673645215072">
+                        <event-block any="1" sid="917261753969214">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="856375930086792" type="kb">
-                                    <param id="0" name="Key">104</param>
+                                <condition id="5" name="Compare axis" sid="455348839898751" type="gp">
+                                    <param id="0" name="Gamepad">2</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="177165029851717" type="Player4">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <event-block sid="964320147058349">
+                        <event-block any="1" sid="675460463698861">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="586247624786283" type="kb">
-                                    <param id="0" name="Key">101</param>
+                                <condition id="5" name="Compare axis" sid="536099595525923" type="gp">
+                                    <param id="0" name="Gamepad">2</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">-50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="268569676100777" type="Player4">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <event-block sid="636263741070821">
+                        <event-block any="1" sid="982982883530233">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="291737343368506" type="kb">
-                                    <param id="0" name="Key">100</param>
+                                <condition id="5" name="Compare axis" sid="983082129358371" type="gp">
+                                    <param id="0" name="Gamepad">2</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="127085947051067" type="Player4">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <event-block sid="965993530429277">
+                        <event-block any="1" sid="915250432947884">
                             <conditions>
-                                <condition id="2" name="Key is down" sid="743227952842807" type="kb">
-                                    <param id="0" name="Key">102</param>
+                                <condition id="5" name="Compare axis" sid="759938430198066" type="gp">
+                                    <param id="0" name="Gamepad">2</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">-50</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direcciones" id="7" name="Simulate control" sid="969788672868607" type="Player4">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="211710224531643">
+                            <conditions />
+                            <actions>
+                                <action behavior="CustomMovement" id="2" name="Set speed" sid="793625870216811" type="Player4">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="Speed">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>

@@ -1585,11 +1585,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>48.062000275</x>
+                        <x>48.036998749</x>
                         <y>253.496002197</y>
                         <z>0</z>
-                        <width>456.950622559</width>
-                        <height>45.063873291</height>
+                        <width>457</width>
+                        <height>66</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -1708,6 +1708,7 @@
                 <depth>1</depth>
             </properties>
         </instance>
+        <instance type="DicEspText" uid="81" />
     </nonworld-instances>
     <effects />
 </c2layout>

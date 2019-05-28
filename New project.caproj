@@ -10,6 +10,7 @@
     <unique-id>3sy6iiw7nd6ah</unique-id>
     <saved-with-version>26900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
@@ -79,6 +80,12 @@
             </object-type>
             <object-type global="1" name="CharacterInput" sid="285747280510180">
                 <plugin id="Arr" />
+            </object-type>
+            <object-type name="Audio" sid="499067544008058">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="AJAX" sid="582878209473939">
+                <plugin id="AJAX" />
             </object-type>
         </object-folder>
         <object-folder name="Players">
@@ -2451,6 +2458,9 @@
             <object-type global="1" name="ArrayText" sid="862413061085900">
                 <plugin id="Arr" />
             </object-type>
+            <object-type global="1" name="DicEspText" sid="178448043860233">
+                <plugin id="Dictionary" />
+            </object-type>
         </object-folder>
         <object-type name="Camara" sid="868670560047614">
             <plugin id="Sprite" />
@@ -2550,9 +2560,6 @@
         </object-type>
         <object-type name="Text" sid="793789083019527">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="Audio" sid="499067544008058">
-            <plugin id="Audio" />
         </object-type>
     </object-folder>
     <families>
@@ -2676,9 +2683,11 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="AJAX" uid="80" />
     </global-instances>
     <sounds-folder>
         <file name="empezamos.ogg" />
+        <file name="hablar.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
@@ -2690,5 +2699,6 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="ESP.json" />
     </files-folder>
 </c2project>

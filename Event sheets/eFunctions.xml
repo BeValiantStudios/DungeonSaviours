@@ -195,6 +195,36 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="633231877317702">
+                    <conditions>
+                        <condition id="-10" name="For" sid="563067337910802" type="System">
+                            <param id="0" name="Name">&quot;Act2&quot;</param>
+                            <param id="1" name="Start index">Players</param>
+                            <param id="2" name="End index">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="832578289285228">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="877441724496644" type="Players">
+                                    <param id="0" name="Unique ID">int(tokenat(ListaDeUIDS,loopindex(&quot;Act2&quot;),&quot;|&quot;))</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="969025834365156" type="System">
+                                    <param id="0" name="First value">Players</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="184174081308149" type="Players">
+                                    <param id="0" name="Instance variable">Active</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="939972996359466">
                     <conditions />
                     <actions>
@@ -1120,6 +1150,12 @@
                                     <param id="0" name="Variable">Pressed</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
+                                <action id="0" name="Play" sid="226908129529442" type="Audio">
+                                    <param id="0" name="Audio file">hablar</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;SFX&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="265562437132558">
@@ -1564,25 +1600,25 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Call function" sid="555960688832164" type="f">
+                        <action id="0" name="Call function" sid="853109903529315" type="f">
                             <param id="0" name="Name">&quot;Textbox&quot;</param>
                             <param id="1" name="Parameter {n}">0{###}&quot;En la siguiente te hare elegir dos opciones&quot;</param>
                         </action>
-                        <action id="0" name="Call function" sid="227927065443700" type="f">
+                        <action id="0" name="Call function" sid="699974525433084" type="f">
                             <param id="0" name="Name">&quot;Textbox&quot;</param>
-                            <param id="1" name="Parameter {n}">1{###}&quot;Escoge porfa&quot;{###}&quot;Si&quot;{###}&quot;No&quot;{###}&quot;Qlo obediente&quot;{###}&quot;Mira que eri porfiao&quot;</param>
+                            <param id="1" name="Parameter {n}">1{###}&quot;Escoge porfa&quot;{###}&quot;Si&quot;{###}&quot;No&quot;{###}&quot;Elegiste si&quot;{###}&quot;Elegiste no&quot;</param>
                         </action>
-                        <action id="0" name="Call function" sid="624524500604416" type="f">
+                        <action id="0" name="Call function" sid="937837369347759" type="f">
                             <param id="0" name="Name">&quot;Textbox&quot;</param>
-                            <param id="1" name="Parameter {n}">0{###}&quot;Tres tristes tigres trigo tragaban en un trigal&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}&quot;Tres tristes tigres trigo tragaban en un trigal Tres tristes tigres trigo tragaban en un trigal Tres tristes tigres trigo tragaban en un trigal Tres tristes tigres trigo tragaban en un trigal Tres tristes tigres trigo tragaban en un trigal &quot;</param>
                         </action>
-                        <action id="0" name="Call function" sid="223395157212105" type="f">
+                        <action id="0" name="Call function" sid="742223054760321" type="f">
                             <param id="0" name="Name">&quot;Textbox&quot;</param>
                             <param id="1" name="Parameter {n}">0{###}&quot;Pero ricky riquito no queria comer roca&quot;</param>
                         </action>
-                        <action id="0" name="Call function" sid="454694880580342" type="f">
+                        <action id="0" name="Call function" sid="310598315992112" type="f">
                             <param id="0" name="Name">&quot;Textbox&quot;</param>
-                            <param id="1" name="Parameter {n}">0{###}&quot;Eso jaja salu2&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}&quot;Texto generico final&quot;</param>
                         </action>
                     </actions>
                 </event-block>

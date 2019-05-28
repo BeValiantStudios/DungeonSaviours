@@ -24,12 +24,24 @@
                 <action id="4" name="Load" sid="883294184958814" type="CharacterID">
                     <param id="0" name="JSON">DICCID</param>
                 </action>
+                <action id="-9" name="Set value" sid="154480459453582" type="System">
+                    <param id="0" name="Variable">Players</param>
+                    <param id="1" name="Value">2</param>
+                </action>
                 <action id="0" name="Call function" sid="869864323757580" type="f">
                     <param id="0" name="Name">&quot;ActPlayers&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
+                <action id="-9" name="Set value" sid="535765916561806" type="System">
+                    <param id="0" name="Variable">Players</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="0" name="Call function" sid="109887369499335" type="f">
                     <param id="0" name="Name">&quot;ActPortraits&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="311053381041373" type="f">
+                    <param id="0" name="Name">&quot;ActPlayers&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>

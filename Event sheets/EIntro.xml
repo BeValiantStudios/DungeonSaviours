@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EIntro</name>
     <events>
+        <include>eFunctions</include>
         <event-block sid="351036798229196">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="695315550827404" type="System" />
@@ -11,11 +12,18 @@
                 <action id="4" name="Preload" sid="709948205657362" type="Audio">
                     <param id="0" name="Audio file">empezamos</param>
                 </action>
+                <action id="4" name="Preload" sid="148370313736545" type="Audio">
+                    <param id="0" name="Audio file">hablar</param>
+                </action>
                 <action id="0" name="Play" sid="173628477951416" type="Audio">
                     <param id="0" name="Audio file">empezamos</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;Intro&quot;</param>
+                </action>
+                <action id="1" name="Request project file" sid="572733184195417" type="AJAX">
+                    <param id="0" name="Tag">&quot;LoadDic&quot;</param>
+                    <param id="1" name="File">ESP.json</param>
                 </action>
             </actions>
         </event-block>
@@ -30,6 +38,35 @@
                     <param id="0" name="Layout">Test</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="978624371353603">
+            <conditions>
+                <condition id="0" name="On completed" sid="190753231109760" type="AJAX">
+                    <param id="0" name="Tag">&quot;LoadDic&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Load" sid="915615559928318" type="DicEspText">
+                    <param id="0" name="JSON">AJAX.LastData</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="938953680742330">
+                    <conditions>
+                        <condition id="-10" name="For" sid="708888966827986" type="System">
+                            <param id="0" name="Name">&quot;Spawn&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="133959721512751" type="f">
+                            <param id="0" name="Name">&quot;Textbox&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}str(DicEspText.Get(str(loopindex(&quot;Spawn&quot;))))</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="458499708377347">
             <conditions>
