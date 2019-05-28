@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eFunctions</name>
     <events>
+        <variable comment="0: false 1: true" constant="0" name="IsShow" sid="207035150115863" static="0" type="number">0</variable>
         <comment>// Intercambia posicion de dos players // f.params UID1 UID2</comment>
         <event-block sid="305093746056083">
             <conditions>
@@ -961,6 +962,627 @@
                     <actions>
                         <action id="-15" name="Set visible" sid="366303188512282" type="P4LifebarDegrade">
                             <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="317801146745908" title="TextBox Functions">
+            <sub-events>
+                <variable constant="0" name="NeedToText" sid="435401812231025" static="1" type="text"></variable>
+                <variable comment="0: False 1: True" constant="0" name="IsCalled" sid="677686746012240" static="1" type="number">0</variable>
+                <variable constant="0" name="Current" sid="230686767918597" static="1" type="number">0</variable>
+                <variable constant="0" name="Selected" sid="648563297926718" static="1" type="number">0</variable>
+                <event-block sid="784902110671663">
+                    <conditions>
+                        <condition id="0" name="On function" sid="905282132413917" type="f">
+                            <param id="0" name="Name">&quot;Textbox&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Simply Text box // 1 Text to show</comment>
+                        <event-block sid="467655416495079">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="787185096628464" type="f">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Push" sid="806535376597925" type="ArrayText">
+                                    <param id="0" name="Where">0</param>
+                                    <param id="1" name="Value">f.Param(1)</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="307742015730198" type="ArrayText">
+                                    <param id="0" name="X">Self.Width-1</param>
+                                    <param id="1" name="Y">1</param>
+                                    <param id="2" name="Value">f.Param(0)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="606293854997238">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="641973020936125" type="System">
+                                            <param id="0" name="Variable">IsCalled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="460692573359903" type="System">
+                                            <param id="0" name="Variable">IsCalled</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="117876227636535" type="System">
+                                            <param id="0" name="Variable">Current</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="711340873399182" type="f">
+                                            <param id="0" name="Name">&quot;Showbox&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="616937751268849" type="System">
+                                            <param id="0" name="Variable">NeedToText</param>
+                                            <param id="1" name="Value">f.Param(1)</param>
+                                        </action>
+                                        <action id="-41" name="Wait for signal" sid="896486218154883" type="System">
+                                            <param id="0" name="Tag">&quot;IsShow&quot;</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="190892897937623" type="System">
+                                            <param id="0" name="Group name">&quot;Writer&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Choice Text Box // 1 Text to show / 2 option a / 3 option b / 4 answer option a / 5 answer option b </comment>
+                        <event-block sid="160078917237635">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="796258753407879" type="f">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Push" sid="793971652219139" type="ArrayText">
+                                    <param id="0" name="Where">0</param>
+                                    <param id="1" name="Value">f.Param(1) &amp; &quot;|&quot; &amp; f.Param(2) &amp; &quot;|&quot; &amp; f.Param(3) &amp; &quot;|&quot; &amp; f.Param(4) &amp; &quot;|&quot; &amp; f.Param(5) </param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="205492275369705" type="ArrayText">
+                                    <param id="0" name="X">Self.Width-1</param>
+                                    <param id="1" name="Y">1</param>
+                                    <param id="2" name="Value">f.Param(0)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="604092436752494">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="713365897245128" type="System">
+                                            <param id="0" name="Variable">IsCalled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="386455231633113" type="System">
+                                            <param id="0" name="Variable">IsCalled</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="110695219528594" type="System">
+                                            <param id="0" name="Variable">Current</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="992548191470843" type="f">
+                                            <param id="0" name="Name">&quot;Showbox&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="419378995499724" type="System">
+                                            <param id="0" name="Variable">NeedToText</param>
+                                            <param id="1" name="Value">f.Param(1)</param>
+                                        </action>
+                                        <action id="-41" name="Wait for signal" sid="271250117651354" type="System">
+                                            <param id="0" name="Tag">&quot;IsShow&quot;</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="906477964823100" type="System">
+                                            <param id="0" name="Group name">&quot;Writer&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" inactive="1" sid="942445049818424" title="Writer">
+                    <sub-events>
+                        <variable comment="0: false 1: true" constant="0" name="Pressed" sid="249358746480695" static="1" type="number">0</variable>
+                        <event-block sid="281435876263355">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="397341631811770" type="System">
+                                    <param id="0" name="Interval (seconds)">dt*2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Append text" sid="469716815790215" type="TextInBox">
+                                    <param id="0" name="Text">left(NeedToText,1)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="418382306330666" type="System">
+                                    <param id="0" name="Variable">NeedToText</param>
+                                    <param id="1" name="Value">right(NeedToText,len(NeedToText)-1)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="920281320719542" type="System">
+                                    <param id="0" name="Variable">Pressed</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="265562437132558">
+                            <conditions>
+                                <condition id="1" name="Compare at XY" sid="204780366806808" type="ArrayText">
+                                    <param id="0" name="X">Current-1</param>
+                                    <param id="1" name="Y">1</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="836407249809206">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="194728402581046" type="System">
+                                            <param id="0" name="Variable">NeedToText</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="796385324953064" type="Next">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="552264893709669">
+                                            <conditions>
+                                                <condition id="1" name="On any key pressed" sid="260664492483310" type="kb" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="452425211403239" type="System">
+                                                    <param id="0" name="Variable">Pressed</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="668051654729844">
+                                                    <conditions>
+                                                        <condition id="7" name="Compare size" sid="780015846834537" type="ArrayText">
+                                                            <param id="0" name="Axis">0</param>
+                                                            <param id="1" name="Comparison">4</param>
+                                                            <param id="2" name="Value">Current</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Add to" sid="983564351962374" type="System">
+                                                            <param id="0" name="Variable">Current</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="0" name="Set text" sid="822075380614354" type="TextInBox">
+                                                            <param id="0" name="Text">&quot;&quot;</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="630876611049983" type="System">
+                                                            <param id="0" name="Variable">NeedToText</param>
+                                                            <param id="1" name="Value">tokenat(ArrayText.At(Current-1),0,&quot;|&quot;)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="343647672580977">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="731312892834715" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Call function" sid="129002532677011" type="f">
+                                                            <param id="0" name="Name">&quot;Closebox&quot;</param>
+                                                            <param id="1" name="Parameter {n}"></param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="149203212969222" type="System">
+                                                            <param id="0" name="Group name">&quot;Writer&quot;</param>
+                                                            <param id="1" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="667616074900246">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="-15" name="Set visible" sid="552483370735871" type="Next">
+                                                            <param id="0" name="Visibility">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="377407811489887">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="386562202386080" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="795157460578380" type="Next">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="517611647149621">
+                                    <conditions>
+                                        <condition id="1" name="On any key pressed" sid="436163087705030" type="kb" />
+                                        <condition id="-14" name="Compare variable" sid="678454335973991" type="System">
+                                            <param id="0" name="Variable">Pressed</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="151144112597376" type="TextInBox">
+                                            <param id="0" name="Text">NeedToText</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="259481188517307" type="System">
+                                            <param id="0" name="Variable">NeedToText</param>
+                                            <param id="1" name="Value">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="950775270517464">
+                            <conditions>
+                                <condition id="1" name="Compare at XY" sid="586165458074976" type="ArrayText">
+                                    <param id="0" name="X">Current-1</param>
+                                    <param id="1" name="Y">1</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="465162985184769">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="670804864013691" type="System">
+                                            <param id="0" name="Variable">NeedToText</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="777695378252478" type="Next">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="532336691216549">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="850114171992531" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="839045155671706" type="Option1">
+                                                    <param id="0" name="Text">tokenat(ArrayText.At(Current-1,0),1,&quot;|&quot;)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="232753100732183" type="Option2">
+                                                    <param id="0" name="Text">tokenat(ArrayText.At(Current-1,0),2,&quot;|&quot;)</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="395096453618682" type="Option1">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="729759336805743" type="Option2">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="953172562612303">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="789763385286376" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="699044170567551" type="Next">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="865019750295902">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="445824806921140" type="kb">
+                                            <param id="0" name="Key">40</param>
+                                        </condition>
+                                        <condition id="0" name="On key pressed" sid="420799680239147" type="kb">
+                                            <param id="0" name="Key">38</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="788176658864984" type="System">
+                                            <param id="0" name="Variable">Selected</param>
+                                            <param id="1" name="Value">1-Selected</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="408789888363410">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="108538410771914" type="kb">
+                                            <param id="0" name="Key">13</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="789895736999519" type="System">
+                                            <param id="0" name="Variable">Pressed</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="753969450332606" type="TextInBox">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="793231266936262">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="186327125130891" type="System">
+                                                    <param id="0" name="Variable">Selected</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="946609029617471" type="System">
+                                                    <param id="0" name="Variable">NeedToText</param>
+                                                    <param id="1" name="Value">tokenat(ArrayText.At(Current-1,0),3,&quot;|&quot;)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="951994412071955">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="661725067083131" type="System">
+                                                    <param id="0" name="Variable">Selected</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="393434447748781" type="System">
+                                                    <param id="0" name="Variable">NeedToText</param>
+                                                    <param id="1" name="Value">tokenat(ArrayText.At(Current-1,0),4,&quot;|&quot;)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="892455337841377">
+                                            <conditions />
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="787478737935259" type="ArrayText">
+                                                    <param id="0" name="X">Current-1</param>
+                                                    <param id="1" name="Y">1</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="986543119406814" type="Option1">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="408539536594637" type="Option2">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="234222801121841">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="236877568168816" type="System">
+                                            <param id="0" name="Variable">Selected</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set font color" sid="290687335353850" type="Option1">
+                                            <param id="0" name="Color">rgb(255, 255, 255)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="948100907181561" type="Option2">
+                                            <param id="0" name="Color">rgb(150, 150, 150)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="339901372347925">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="493291208942789" type="System">
+                                            <param id="0" name="Variable">Selected</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set font color" sid="524973869667681" type="Option1">
+                                            <param id="0" name="Color">rgb(150, 150, 150)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="975497306435715" type="Option2">
+                                            <param id="0" name="Color">rgb(255, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="487474865559046">
+                                    <conditions>
+                                        <condition id="1" name="On any key pressed" sid="636838246599316" type="kb" />
+                                        <condition id="-14" name="Compare variable" sid="102225366950795" type="System">
+                                            <param id="0" name="Variable">Pressed</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="568454052308253" type="TextInBox">
+                                            <param id="0" name="Text">NeedToText</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="466244483913295" type="System">
+                                            <param id="0" name="Variable">NeedToText</param>
+                                            <param id="1" name="Value">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="668613779616818">
+                    <conditions>
+                        <condition id="0" name="On function" sid="400811014337240" type="f">
+                            <param id="0" name="Name">&quot;Showbox&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="758141287140908">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Set text" sid="288784208023953" type="TextInBox">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="779499906130930" type="System">
+                                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="468150800964729" type="System">
+                                    <param id="0" name="Layer">&quot;Hud2&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action behavior="Pos" id="0" name="Set active" sid="268187439677861" type="BlackBox">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="502761500766819" type="System">
+                                    <param id="0" name="Seconds">BlackBox.Pos.Period/4</param>
+                                </action>
+                                <action behavior="Pos" id="0" name="Set active" sid="375019740827459" type="BlackBox">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Scale" id="0" name="Set active" sid="164249433298235" type="BlackBox">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="388536667092123" type="System">
+                                    <param id="0" name="Seconds">BlackBox.Scale.Period/4</param>
+                                </action>
+                                <action behavior="Scale" id="0" name="Set active" sid="552482377501548" type="BlackBox">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="966148007402422" type="BlackBox">
+                                    <param id="0" name="Width">500</param>
+                                </action>
+                                <action id="-42" name="Signal" sid="102311189666612" type="System">
+                                    <param id="0" name="Tag">&quot;IsShow&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="580923731286045" type="System">
+                                    <param id="0" name="Variable">IsShow</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="522500579054778">
+                    <conditions>
+                        <condition id="0" name="On function" sid="382633322225031" type="f">
+                            <param id="0" name="Name">&quot;Closebox&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="976161381718616">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Set text" sid="397649915528788" type="TextInBox">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action behavior="Scale" id="0" name="Set active" sid="669668684779532" type="BlackBox">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="738669438155377" type="System">
+                                    <param id="0" name="Seconds">BlackBox.Scale.Period/4</param>
+                                </action>
+                                <action behavior="Scale" id="0" name="Set active" sid="959713716712028" type="BlackBox">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Scale" id="5" name="Set cycle position" sid="241605594598784" type="BlackBox">
+                                    <param id="0" name="Cycle position">0.5</param>
+                                </action>
+                                <action behavior="Pos" id="0" name="Set active" sid="501052239765912" type="BlackBox">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="950170896484821" type="System">
+                                    <param id="0" name="Seconds">BlackBox.Pos.Period/4</param>
+                                </action>
+                                <action behavior="Pos" id="0" name="Set active" sid="557220719389075" type="BlackBox">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Pos" id="5" name="Set cycle position" sid="871101174268914" type="BlackBox">
+                                    <param id="0" name="Cycle position">0.5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="119351258722772" type="System">
+                                    <param id="0" name="Variable">IsShow</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="885401867531155" type="System">
+                                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="979139758869220" type="System">
+                                    <param id="0" name="Layer">&quot;Hud2&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="619610377110201" type="Next">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="370284173899768" type="System">
+                                    <param id="0" name="Variable">IsCalled</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="361981615938624" type="System">
+                                    <param id="0" name="Variable">Current</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="1" name="Set size" sid="168643630468617" type="ArrayText">
+                                    <param id="0" name="Width">0</param>
+                                    <param id="1" name="Height">2</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="0" name="Clear" sid="113112656187878" type="ArrayText" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="827754755438526">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="311996397405851" type="kb">
+                            <param id="0" name="Key">51</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="555960688832164" type="f">
+                            <param id="0" name="Name">&quot;Textbox&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}&quot;En la siguiente te hare elegir dos opciones&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="227927065443700" type="f">
+                            <param id="0" name="Name">&quot;Textbox&quot;</param>
+                            <param id="1" name="Parameter {n}">1{###}&quot;Escoge porfa&quot;{###}&quot;Si&quot;{###}&quot;No&quot;{###}&quot;Qlo obediente&quot;{###}&quot;Mira que eri porfiao&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="624524500604416" type="f">
+                            <param id="0" name="Name">&quot;Textbox&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}&quot;Tres tristes tigres trigo tragaban en un trigal&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="223395157212105" type="f">
+                            <param id="0" name="Name">&quot;Textbox&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}&quot;Pero ricky riquito no queria comer roca&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="454694880580342" type="f">
+                            <param id="0" name="Name">&quot;Textbox&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}&quot;Eso jaja salu2&quot;</param>
                         </action>
                     </actions>
                 </event-block>

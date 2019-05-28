@@ -2,7 +2,7 @@
 <c2project>
     <name>New project</name>
     <description></description>
-    <version>0.1.9</version>
+    <version>0.1.10</version>
     <author>Chronosphere Studio</author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -27,6 +27,7 @@
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -2420,6 +2421,36 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="TextBox">
+            <object-type name="BlackBox" sid="247508419414576">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pos" sid="989722378209531">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Scale" sid="975392466067389">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="500342175540181" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Option1" sid="260225142925812">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Option2" sid="888933050545174">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TextInBox" sid="705728068972077">
+                <plugin id="Text" />
+            </object-type>
+            <object-type global="1" name="ArrayText" sid="862413061085900">
+                <plugin id="Arr" />
+            </object-type>
+        </object-folder>
         <object-type name="Camara" sid="868670560047614">
             <plugin id="Sprite" />
             <instance-variables>
@@ -2500,6 +2531,19 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Next" sid="446890910708154">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="103610602446283">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="258200716690167" speed="5">
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.6" />
                 </animation>
             </animation-folder>
         </object-type>
