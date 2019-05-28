@@ -22,8 +22,11 @@
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -2167,6 +2170,256 @@
                 <plugin id="Dictionary" />
             </object-type>
         </object-folder>
+        <object-folder name="Attacks">
+            <object-type name="GolpeAgua" sid="738847579614587">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="240983983127220">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="366784013731925" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeAgua2" sid="562197064404150">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="847422799212076">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804686828989090" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0" y="0" />
+                            <image-point name="Imagepoint 2" x="0" y="1" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeAgua3" sid="155860778988732">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="995685232069654">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487935154974771" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeAgua4" sid="267434384921004">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="897763046012451">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="955614847877035" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeAire" sid="685044860191784">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="788285708222454">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="898359709243595" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeAire2" sid="866908446557621">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="469196484013630">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="262902421421176" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeAire3" sid="592941410404454">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="289575268671043">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="524750099769018" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeAire4" sid="408829897917782">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="482035516959161">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="216428164167467" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeAire5" sid="950419909037094">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="831669529740190">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="Rotate" sid="860014822165121">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="964930929728728" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeFuego" sid="277426393105196">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="873368270994284">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="485756741622180" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeFuego2" sid="274185683880437">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="390990583992557">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585909108208635" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeFuego3" sid="519824753838088">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="134810928200917">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="912120677505266" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeTierra" sid="321813047639429">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="378755854853374">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439833284553838" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeTierra2" sid="639567576341084">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="909293876535609">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="961967209917450" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeTierra3" sid="856093047914903">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="442919285937947">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="935184849371117" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeTierra4" sid="372497598954302">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="604118440876122">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="332645001352525" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeTierra5" sid="216147343258906">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="525402560831673">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="332105083236299" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeTierra6" sid="484779638355341">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="897889481505711">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576231261875037" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Camara" sid="868670560047614">
             <plugin id="Sprite" />
             <instance-variables>
@@ -2268,6 +2521,7 @@
                 <instance-variable name="NumY" sid="565563619551992" type="number" />
                 <instance-variable name="VidaActual" sid="471541771535121" type="number" />
                 <instance-variable name="VidaMaxima" sid="930011168357983" type="number" />
+                <instance-variable name="Combo" sid="210474821629617" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="CustomMovement" sid="481838044988093">
@@ -2305,6 +2559,33 @@
                     <effect id="setcolor" />
                 </effect-type>
             </effects>
+        </family>
+        <family name="AtaquesPersonajes" plugin-id="Sprite" sid="557418932154244">
+            <members>
+                <member>GolpeAgua</member>
+                <member>GolpeAgua2</member>
+                <member>GolpeAgua3</member>
+                <member>GolpeAgua4</member>
+                <member>GolpeAire</member>
+                <member>GolpeAire2</member>
+                <member>GolpeAire3</member>
+                <member>GolpeAire4</member>
+                <member>GolpeAire5</member>
+                <member>GolpeFuego</member>
+                <member>GolpeFuego2</member>
+                <member>GolpeFuego3</member>
+                <member>GolpeTierra</member>
+                <member>GolpeTierra2</member>
+                <member>GolpeTierra3</member>
+                <member>GolpeTierra4</member>
+                <member>GolpeTierra5</member>
+                <member>GolpeTierra6</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Fade" sid="225396144491607">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
         </family>
     </families>
     <layout-folder>

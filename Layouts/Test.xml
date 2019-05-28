@@ -181,6 +181,7 @@
                         <NumY>0</NumY>
                         <VidaActual>100</VidaActual>
                         <VidaMaxima>100</VidaMaxima>
+                        <Combo>1</Combo>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -386,6 +387,7 @@
                         <NumY>-50</NumY>
                         <VidaActual>100</VidaActual>
                         <VidaMaxima>100</VidaMaxima>
+                        <Combo>1</Combo>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -439,6 +441,7 @@
                         <NumY>50</NumY>
                         <VidaActual>100</VidaActual>
                         <VidaMaxima>100</VidaMaxima>
+                        <Combo>1</Combo>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -492,6 +495,7 @@
                         <NumY>50</NumY>
                         <VidaActual>100</VidaActual>
                         <VidaMaxima>100</VidaMaxima>
+                        <Combo>1</Combo>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
