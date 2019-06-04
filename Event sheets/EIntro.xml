@@ -25,6 +25,12 @@
                     <param id="0" name="Tag">&quot;LoadDic&quot;</param>
                     <param id="1" name="File">ESP.json</param>
                 </action>
+                <action id="-16" name="Wait" sid="608193157676486" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="925654381610066" type="System">
+                    <param id="0" name="Layout">Test</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="516336800439156">
