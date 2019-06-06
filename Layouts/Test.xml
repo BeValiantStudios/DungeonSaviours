@@ -380,7 +380,7 @@
                     </properties>
                     <instance-variables>
                         <Id>2</Id>
-                        <Character>Agua</Character>
+                        <Character>Hielo</Character>
                         <Active>false</Active>
                         <Estado>Input Player 2</Estado>
                         <NumX>-50</NumX>

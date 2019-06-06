@@ -1199,6 +1199,190 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="619742013551834">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="864541862713271" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Hielo&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="246294446655653" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="407326887611492" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="126797876449107" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="902557064387844" type="System">
+                                    <param id="0" name="Seconds">0.07</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="483101703726507" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="495232567646425" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="343786506239019" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="765681570985085">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="929223856454909" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Hielo&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="263486522009220" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="948768920881925" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="508174698497048" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="524935200006604" type="System">
+                                    <param id="0" name="Seconds">0.07</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="428513400871675" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="229171896996828" type="System">
+                                    <param id="0" name="Seconds">0.07</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="465722197115533" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="441168081014500" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="766605491029322" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="937610873379595">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="969200581591064" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Hielo&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="651619124642334" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="760211783925556" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="746004549848973" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="231506063760008" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="512486868314161" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="234021863251564" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="874692184459988" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="283106731809329" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="396730815378495" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="279172731072675" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="303945874404281" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="857588432326913" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="129290672360515" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="129201357810459" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="390746259466667" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="504631812200579" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="726322188363542" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="306559997737264" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="596970722979757" type="Player1">
+                                    <param id="0" name="Object">GolpeHielo2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="183400338309332" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="383478174168720" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
@@ -1408,6 +1592,41 @@
                             <param id="0" name="Object">GolpeTierra6</param>
                             <param id="1" name="Layer">&quot;Game&quot;</param>
                             <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="964730250135877">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="270290381237437" type="GolpeHielo" />
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="422916831200838" type="GolpeHielo">
+                            <param id="0" name="Angle">cangle2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="969182943552772">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="789375351075662" type="GolpeHielo2" />
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="183243678471413" type="GolpeHielo2">
+                            <param id="0" name="Angle">cangle2</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="773176843284673" type="GolpeHielo2">
+                            <param id="0" name="Degrees">random(-90,90)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="350709287351644" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="812883327557715" type="GolpeHielo2">
+                            <param id="0" name="Angle">cangle2</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="947988943834258" type="GolpeHielo2">
+                            <param id="0" name="Degrees">random(-5,5)</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="246101236830631" type="GolpeHielo2">
+                            <param id="0" name="Speed">700</param>
                         </action>
                     </actions>
                 </event-block>

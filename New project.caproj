@@ -2428,6 +2428,32 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="GolpeHielo" sid="344179322549463">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="448686774900931">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957982617017075" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GolpeHielo2" sid="628192730850571">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="416741633990613">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774043987480791" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="TextBox">
             <object-type name="BlackBox" sid="247508419414576">
@@ -2632,6 +2658,8 @@
                 <member>GolpeFuego</member>
                 <member>GolpeFuego2</member>
                 <member>GolpeFuego3</member>
+                <member>GolpeHielo</member>
+                <member>GolpeHielo2</member>
                 <member>GolpeTierra</member>
                 <member>GolpeTierra2</member>
                 <member>GolpeTierra3</member>
