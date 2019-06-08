@@ -864,6 +864,143 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="316717040978040">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="123199806247130" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Musical&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="529490831450978" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="103964863193814" type="Player1">
+                                    <param id="0" name="Object">GolpeMusical3</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="489392803002558" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="865727821563556" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="449440267482530" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="894409451036114">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="135456992780026" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Musical&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="807189236570444" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="814327210025842" type="Player1">
+                                    <param id="0" name="Object">GolpeMusical</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="587982783304651" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="619182904677521" type="System">
+                                    <param id="0" name="Seconds">0.15</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="108727456567280" type="Player1">
+                                    <param id="0" name="Object">GolpeMusical</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="964629018983345" type="System">
+                                    <param id="0" name="Seconds">0.15</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="401833654445631" type="Player1">
+                                    <param id="0" name="Object">GolpeMusical</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="363005164601254" type="System">
+                                    <param id="0" name="Seconds">0.15</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="577583935535770" type="Player1">
+                                    <param id="0" name="Object">GolpeMusical</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="172738858826096" type="System">
+                                    <param id="0" name="Seconds">0.15</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="501109340645301" type="Player1">
+                                    <param id="0" name="Object">GolpeMusical</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="509329392434963" type="System">
+                                    <param id="0" name="Seconds">0.15</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="433696240026183" type="Player1">
+                                    <param id="0" name="Object">GolpeMusical</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="941425459752841" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="209811103298570" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="995707931014946">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="475703092508278" type="Player1">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Musical&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="700398030217512" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="291855954805528" type="GolpeMusical">
+                                    <param id="0" name="Object">GolpeMusical2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="953441431760264" type="GolpeMusical" />
+                                <action id="-10" name="Set value" sid="769596920223419" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="722180212567848" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="669264862398510" type="Player1">
+                                    <param id="0" name="Instance variable">Combo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="959555423299503">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="415390209230840" type="Player1">
@@ -1632,5 +1769,16 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="882257953873285">
+            <conditions>
+                <condition id="-18" name="On created" sid="919513509641190" type="GolpeMusical" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="531472284299596" type="GolpeMusical">
+                    <param id="0" name="Pin to">Players</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
