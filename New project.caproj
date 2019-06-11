@@ -78,9 +78,6 @@
             <object-type name="Mouse" sid="774910838290352">
                 <plugin id="Mouse" />
             </object-type>
-            <object-type global="1" name="CharacterInput" sid="285747280510180">
-                <plugin id="Arr" />
-            </object-type>
             <object-type name="Audio" sid="499067544008058">
                 <plugin id="Audio" />
             </object-type>
@@ -2178,6 +2175,12 @@
             <object-type global="1" name="CharacterID" sid="476493930781700">
                 <plugin id="Dictionary" />
             </object-type>
+            <object-type global="1" name="CharacterInput" sid="285747280510180">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="CharacterData" sid="656119082163478">
+                <plugin id="Arr" />
+            </object-type>
         </object-folder>
         <object-folder name="Attacks">
             <object-type name="GolpeAgua" sid="738847579614587">
@@ -2720,6 +2723,10 @@
                 <member>GolpeTierra5</member>
                 <member>GolpeTierra6</member>
             </members>
+            <instance-variables>
+                <instance-variable name="LinkedUID" sid="434825036850752" type="number" />
+                <instance-variable name="LinkedAngle" sid="895580331657507" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Fade" sid="225396144491607">
                     <behavior id="Fade" />
