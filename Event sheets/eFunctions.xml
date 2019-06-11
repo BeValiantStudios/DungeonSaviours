@@ -2001,6 +2001,9 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-8" name="Set angle" sid="370567613088357" type="GolpeTierra">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
                                         <action id="-10" name="Set value" sid="767556459990938" type="Players">
                                             <param id="0" name="Instance variable">Combo</param>
                                             <param id="1" name="Value">0</param>
@@ -2032,6 +2035,9 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-8" name="Set angle" sid="130715002199846" type="GolpeTierra2">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
                                         <action id="-10" name="Set value" sid="110267410138496" type="Players">
                                             <param id="0" name="Instance variable">Combo</param>
                                             <param id="1" name="Value">0</param>
@@ -2062,6 +2068,9 @@
                                         <action id="-10" name="Set value" sid="556736717749816" type="GolpeTierra3">
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="198711767318242" type="GolpeTierra3">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="638806353016990" type="Players">
                                             <param id="0" name="Instance variable">Combo</param>
@@ -2106,6 +2115,9 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-8" name="Set angle" sid="944263344828673" type="GolpeAire">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
                                         <action id="-10" name="Set value" sid="684396876860504" type="Players">
                                             <param id="0" name="Instance variable">Combo</param>
                                             <param id="1" name="Value">0</param>
@@ -2133,27 +2145,42 @@
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action id="-10" name="Set value" sid="926010747303892" type="GolpeAire">
+                                            <param id="0" name="Instance variable">LinkedAngle</param>
+                                            <param id="1" name="Value">hAngle</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="970234205121462" type="GolpeAire">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="254673750268335" type="Players">
                                             <param id="0" name="Object">GolpeAire2</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="887300369102375" type="GolpeAire2">
+                                            <param id="0" name="Instance variable">LinkedAngle</param>
+                                            <param id="1" name="Value">hAngle</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="650158996661697" type="GolpeAire2">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="353712008680820" type="GolpeAire2">
+                                            <param id="0" name="Degrees">25</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="403106778588035" type="Players">
                                             <param id="0" name="Object">GolpeAire3</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="926010747303892" type="GolpeAire">
-                                            <param id="0" name="Instance variable">LinkedAngle</param>
-                                            <param id="1" name="Value">hAngle</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="887300369102375" type="GolpeAire2">
-                                            <param id="0" name="Instance variable">LinkedAngle</param>
-                                            <param id="1" name="Value">hAngle</param>
-                                        </action>
                                         <action id="-10" name="Set value" sid="155481307182967" type="GolpeAire3">
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="999310605563753" type="GolpeAire3">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="729282215413247" type="GolpeAire3">
+                                            <param id="0" name="Degrees">-25</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="208412458193471" type="Players">
                                             <param id="0" name="Instance variable">Combo</param>
@@ -2186,9 +2213,15 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-8" name="Set angle" sid="232026718777679" type="GolpeAire4">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
                                         <action id="-10" name="Set value" sid="172950091492941" type="Players">
                                             <param id="0" name="Instance variable">Combo</param>
                                             <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="700379362013827" type="System">
+                                            <param id="0" name="Seconds">0.7</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="234846009863813" type="Players">
                                             <param id="0" name="Instance variable">Combo</param>
@@ -2226,6 +2259,9 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-8" name="Set angle" sid="183963266568317" type="GolpeAgua">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
                                         <action id="-10" name="Set value" sid="874809352499933" type="Players">
                                             <param id="0" name="Instance variable">Combo</param>
                                             <param id="1" name="Value">0</param>
@@ -2239,6 +2275,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment></comment>
                                 <event-block sid="581104963611179">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="593818790941881" type="Players">
@@ -2284,18 +2321,30 @@
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">1</param>
                                         </action>
+                                        <action id="-10" name="Set value" sid="570967204690149" type="GolpeAgua3">
+                                            <param id="0" name="Instance variable">LinkedAngle</param>
+                                            <param id="1" name="Value">hAngle</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="243972910806121" type="GolpeAgua3">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="402608191711854" type="GolpeAgua3">
+                                            <param id="0" name="Degrees">-90</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="132661701828179" type="GolpeAgua2">
                                             <param id="0" name="Object">GolpeAgua4</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">2</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="570967204690149" type="GolpeAgua3">
-                                            <param id="0" name="Instance variable">LinkedAngle</param>
-                                            <param id="1" name="Value">hAngle</param>
-                                        </action>
                                         <action id="-10" name="Set value" sid="449589490279184" type="GolpeAgua4">
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="524804451018682" type="GolpeAgua4">
+                                            <param id="0" name="Angle">Self.LinkedAngle</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="875842469078835" type="GolpeAgua4">
+                                            <param id="0" name="Degrees">90</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="647826372580972" type="Players">
                                             <param id="0" name="Instance variable">Combo</param>
@@ -2444,6 +2493,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-10" name="Set value" sid="301938561225501" type="Players">
+                                            <param id="0" name="Instance variable">Combo</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="387509129496707" type="Players">
                                             <param id="0" name="Object">GolpeHielo2</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
@@ -2456,9 +2509,8 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="301938561225501" type="Players">
-                                            <param id="0" name="Instance variable">Combo</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-18" name="Rotate clockwise" sid="536311797084810" type="GolpeHielo2">
+                                            <param id="0" name="Degrees">random(-90,90)</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="213895832893709" type="System">
                                             <param id="0" name="Seconds">0.01</param>
@@ -2475,6 +2527,9 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-18" name="Rotate clockwise" sid="393277903138054" type="GolpeHielo2">
+                                            <param id="0" name="Degrees">random(-90,90)</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="267346389226357" type="System">
                                             <param id="0" name="Seconds">0.01</param>
                                         </action>
@@ -2489,6 +2544,9 @@
                                         <action id="-10" name="Set value" sid="865761574922914" type="GolpeHielo2">
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="548016437398061" type="GolpeHielo2">
+                                            <param id="0" name="Degrees">random(-90,90)</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="650949116435884" type="System">
                                             <param id="0" name="Seconds">0.01</param>
@@ -2505,6 +2563,9 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-18" name="Rotate clockwise" sid="394481157754031" type="GolpeHielo2">
+                                            <param id="0" name="Degrees">random(-90,90)</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="970169985931213" type="System">
                                             <param id="0" name="Seconds">0.01</param>
                                         </action>
@@ -2519,6 +2580,9 @@
                                         <action id="-10" name="Set value" sid="239600182601114" type="GolpeHielo2">
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="153605374063628" type="GolpeHielo2">
+                                            <param id="0" name="Degrees">random(-90,90)</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="452523390682326" type="System">
                                             <param id="0" name="Seconds">0.01</param>
@@ -2535,6 +2599,9 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-18" name="Rotate clockwise" sid="843453502487779" type="GolpeHielo2">
+                                            <param id="0" name="Degrees">random(-90,90)</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="968984057916541" type="System">
                                             <param id="0" name="Seconds">0.01</param>
                                         </action>
@@ -2549,6 +2616,9 @@
                                         <action id="-10" name="Set value" sid="858497447944814" type="GolpeHielo2">
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="545400063167273" type="GolpeHielo2">
+                                            <param id="0" name="Degrees">random(-90,90)</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="993533599265557" type="System">
                                             <param id="0" name="Seconds">0.01</param>
@@ -2565,6 +2635,9 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-18" name="Rotate clockwise" sid="777480416118951" type="GolpeHielo2">
+                                            <param id="0" name="Degrees">random(-90,90)</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="488989069459093" type="System">
                                             <param id="0" name="Seconds">0.01</param>
                                         </action>
@@ -2580,6 +2653,9 @@
                                             <param id="0" name="Instance variable">LinkedAngle</param>
                                             <param id="1" name="Value">hAngle</param>
                                         </action>
+                                        <action id="-18" name="Rotate clockwise" sid="172265316378483" type="GolpeHielo2">
+                                            <param id="0" name="Degrees">random(-90,90)</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="360591210939405" type="System">
                                             <param id="0" name="Seconds">1.0</param>
                                         </action>
@@ -2587,8 +2663,18 @@
                                             <param id="0" name="Instance variable">Combo</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-8" name="Set angle" sid="996845585467800" type="GolpeHielo2">
-                                            <param id="0" name="Angle">hAngle</param>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="282625994160082">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="114325006761019" type="System">
+                                            <param id="0" name="Object">GolpeHielo2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="869717255845152" type="GolpeHielo2">
+                                            <param id="0" name="Instance variable">LinkedAngle</param>
+                                            <param id="1" name="Value">hAngle</param>
                                         </action>
                                     </actions>
                                 </event-block>

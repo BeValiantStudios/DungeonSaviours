@@ -818,62 +818,11 @@
         </event-group>
         <event-group description="" sid="584103403754626" title="OnCreatedAtaques">
             <sub-events>
-                <event-block sid="757777603558824">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="670157070805079" type="GolpeAire" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="857580190929950" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="707723180322322" type="GolpeAire">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="557626894878018">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="522486946162652" type="GolpeAire2" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="803985520890922" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="540532143643842" type="GolpeAire2">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
-                        <action id="-18" name="Rotate clockwise" sid="458654784088797" type="GolpeAire2">
-                            <param id="0" name="Degrees">25</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="339868027882669">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="797644379584359" type="GolpeAire3" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="795608664275322" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="889757114820469" type="GolpeAire3">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
-                        <action id="-18" name="Rotate clockwise" sid="418152638013443" type="GolpeAire3">
-                            <param id="0" name="Degrees">-25</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="105617039247806">
                     <conditions>
                         <condition id="-18" name="On created" sid="958326652295265" type="GolpeAire4" />
                     </conditions>
                     <actions>
-                        <action id="-16" name="Wait" sid="281651572460810" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="322350408036572" type="GolpeAire4">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
                         <action id="-16" name="Wait" sid="455081219902717" type="System">
                             <param id="0" name="Seconds">0.7</param>
                         </action>
@@ -883,19 +832,6 @@
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="989419037014037" type="GolpeAire4" />
-                    </actions>
-                </event-block>
-                <event-block sid="409910271045384">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="116152539143836" type="GolpeAgua" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="137878937788975" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="119886445149016" type="GolpeAgua">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="974517626073656">
@@ -922,75 +858,11 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="511117519243361">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="782721981994935" type="GolpeAgua3" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="315531484280518" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="431230361397377" type="GolpeAgua3">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
-                        <action id="-18" name="Rotate clockwise" sid="332351434342593" type="GolpeAgua3">
-                            <param id="0" name="Degrees">-90</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="489888908132429">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="817848154138189" type="GolpeAgua4" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="166742415866598" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="801036878012108" type="GolpeAgua4">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
-                        <action id="-18" name="Rotate clockwise" sid="256729349530613" type="GolpeAgua4">
-                            <param id="0" name="Degrees">90</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="309102697839183">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="819959532482249" type="GolpeTierra" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="929758483823835" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="401427500860157" type="GolpeTierra">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="202168713043934">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="739322229719226" type="GolpeTierra2" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="307125433648213" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="732002610469307" type="GolpeTierra2">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="436371122834180">
                     <conditions>
                         <condition id="-18" name="On created" sid="277521343844076" type="GolpeTierra3" />
                     </conditions>
                     <actions>
-                        <action id="-16" name="Wait" sid="522787949925725" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="271246830167352" type="GolpeTierra3">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
                         <action id="-16" name="Wait" sid="202055931885442" type="System">
                             <param id="0" name="Seconds">0.15</param>
                         </action>
@@ -1036,23 +908,11 @@
                         <condition id="-18" name="On created" sid="789375351075662" type="GolpeHielo2" />
                     </conditions>
                     <actions>
-                        <action id="-16" name="Wait" sid="190050000102560" type="System">
-                            <param id="0" name="Seconds">dt</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="183243678471413" type="GolpeHielo2">
-                            <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
-                        <action id="-18" name="Rotate clockwise" sid="773176843284673" type="GolpeHielo2">
-                            <param id="0" name="Degrees">random(-90,90)</param>
-                        </action>
                         <action id="-16" name="Wait" sid="350709287351644" type="System">
                             <param id="0" name="Seconds">0.5</param>
                         </action>
                         <action id="-8" name="Set angle" sid="812883327557715" type="GolpeHielo2">
                             <param id="0" name="Angle">Self.LinkedAngle</param>
-                        </action>
-                        <action id="-18" name="Rotate clockwise" sid="947988943834258" type="GolpeHielo2">
-                            <param id="0" name="Degrees">random(-5,5)</param>
                         </action>
                         <action behavior="Bullet" id="0" name="Set speed" sid="246101236830631" type="GolpeHielo2">
                             <param id="0" name="Speed">700</param>
