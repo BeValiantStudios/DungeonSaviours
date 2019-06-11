@@ -1711,8 +1711,8 @@
         <instance type="DicEspText" uid="81" />
         <instance type="CharacterData" uid="92">
             <properties>
-                <width>3</width>
-                <height>3</height>
+                <width>4</width>
+                <height>4</height>
                 <depth>1</depth>
             </properties>
         </instance>

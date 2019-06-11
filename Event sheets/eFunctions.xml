@@ -284,6 +284,7 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <comment>f0 player id</comment>
         <event-block sid="115088793215588">
             <conditions>
                 <condition id="0" name="On function" sid="612809312751176" type="f">
@@ -297,39 +298,51 @@
                 </action>
             </actions>
             <sub-events>
-                <event-block sid="826016094510867">
+                <event-block sid="941617241875496">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="947958291445958" type="System">
-                            <param id="0" name="Variable">Activo</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">tokencount(ListaDeUIDSInactive,&quot;|&quot;) -1</param>
+                        <condition id="-14" name="Compare variable" sid="877944986947513" type="System">
+                            <param id="0" name="Variable">Players</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">4</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="997357092776888" type="System">
-                            <param id="0" name="Variable">Activo</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="0" name="Call function" sid="355511995353032" type="f">
-                            <param id="0" name="Name">&quot;Intercambio&quot;</param>
-                            <param id="1" name="Parameter {n}">int(tokenat(ListaDeUIDS,0,&quot;|&quot;)){###}int(tokenat(ListaDeUIDSInactive,Activo,&quot;|&quot;))</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="205145306060565">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="209003208894827" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="827633409243773" type="f">
-                            <param id="0" name="Name">&quot;Intercambio&quot;</param>
-                            <param id="1" name="Parameter {n}">int(tokenat(ListaDeUIDS,0,&quot;|&quot;)){###}int(tokenat(ListaDeUIDSInactive,Activo,&quot;|&quot;))</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="187750399038238" type="System">
-                            <param id="0" name="Variable">Activo</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="826016094510867">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="947958291445958" type="System">
+                                    <param id="0" name="Variable">Activo</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">tokencount(ListaDeUIDSInactive,&quot;|&quot;) -1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="997357092776888" type="System">
+                                    <param id="0" name="Variable">Activo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="355511995353032" type="f">
+                                    <param id="0" name="Name">&quot;Intercambio&quot;</param>
+                                    <param id="1" name="Parameter {n}">int(tokenat(ListaDeUIDS,f.Param(0),&quot;|&quot;)){###}int(tokenat(ListaDeUIDSInactive,Activo,&quot;|&quot;))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="205145306060565">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="209003208894827" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="827633409243773" type="f">
+                                    <param id="0" name="Name">&quot;Intercambio&quot;</param>
+                                    <param id="1" name="Parameter {n}">int(tokenat(ListaDeUIDS,f.Param(0),&quot;|&quot;)){###}int(tokenat(ListaDeUIDSInactive,Activo,&quot;|&quot;))</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="187750399038238" type="System">
+                                    <param id="0" name="Variable">Activo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -1636,6 +1649,55 @@
             </conditions>
             <actions />
             <sub-events>
+                <event-block sid="313986356962576">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="965497554962778" type="f">
+                            <param id="0" name="Index">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set at XY" sid="172633798918633" type="CharacterData">
+                            <param id="0" name="X">f.Param(3)</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">angle(Players.X,Players.Y,Mouse.X,Mouse.Y)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="200744732271357" type="System">
+                            <param id="0" name="Variable">hAngle</param>
+                            <param id="1" name="Value">angle(Players.X,Players.Y,Mouse.X,Mouse.Y)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="391868116401982">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="973946504903252" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set at XY" sid="513544390802182" type="CharacterData">
+                            <param id="0" name="X">f.Param(3)</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">angle(0,0,gp.Axis(f.Param(2), 2), gp.Axis(f.Param(2), 3))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="869355570855429">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="389368137349445" type="System">
+                                    <param id="0" name="First value">( (gp.Axis(f.Param(2),2) &gt; 0) |  (gp.Axis(f.Param(2),2) &lt; 0) ) | ( (gp.Axis(f.Param(2),3) &gt; 0) |  (gp.Axis(f.Param(2),3) &lt; 0) ) </param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="721117823520539" type="System">
+                                    <param id="0" name="Variable">hAngle</param>
+                                    <param id="1" name="Value">angle(0,0,gp.Axis(f.Param(2), 2), gp.Axis(f.Param(2), 3))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="895982519133233">
                     <conditions>
                         <condition id="-14" name="Pick by unique ID" sid="900396270824720" type="Players">
@@ -1644,54 +1706,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="313986356962576">
-                            <conditions>
-                                <condition id="1" name="Compare parameter" sid="965497554962778" type="f">
-                                    <param id="0" name="Index">1</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="3" name="Set at XY" sid="172633798918633" type="CharacterData">
-                                    <param id="0" name="X">f.Param(3)</param>
-                                    <param id="1" name="Y">0</param>
-                                    <param id="2" name="Value">angle(Players.X,Players.Y,Mouse.X,Mouse.Y)</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="200744732271357" type="System">
-                                    <param id="0" name="Variable">hAngle</param>
-                                    <param id="1" name="Value">angle(Players.X,Players.Y,Mouse.X,Mouse.Y)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="391868116401982">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="973946504903252" type="System" />
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="869355570855429">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="389368137349445" type="System">
-                                            <param id="0" name="First value">( (gp.Axis(f.Param(2),2) &gt; 0) |  (gp.Axis(f.Param(2),2) &lt; 0) ) | ( (gp.Axis(f.Param(2),3) &gt; 0) |  (gp.Axis(f.Param(2),3) &lt; 0) ) </param>
-                                            <param id="1" name="Comparison">1</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="3" name="Set at XY" sid="513544390802182" type="CharacterData">
-                                            <param id="0" name="X">f.Param(3)</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Value">angle(0,0,gp.Axis(f.Param(2), 2), gp.Axis(f.Param(2), 3))</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="721117823520539" type="System">
-                                            <param id="0" name="Variable">hAngle</param>
-                                            <param id="1" name="Value">angle(0,0,gp.Axis(f.Param(2), 2), gp.Axis(f.Param(2), 3))</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
                         <event-block sid="199408896151949">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="511299561383368" type="Players">
