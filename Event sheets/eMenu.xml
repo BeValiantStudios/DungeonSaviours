@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eMenu</name>
+    <events>
+        <variable constant="0" name="Selector" sid="609753133763176" static="0" type="number">0</variable>
+        <event-block sid="629579203647029">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="303349035715058" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="504880337891754" type="System">
+                    <param id="0" name="Seconds">2.2</param>
+                </action>
+                <action id="-9" name="Set value" sid="827425768222761" type="System">
+                    <param id="0" name="Variable">Selector</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="470751645941671" type="System">
+                    <param id="0" name="Group name">&quot;Selector&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="111146127347998" title="Selector">
+            <sub-events>
+                <event-block sid="390567996026050">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="966867392165634" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Exit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="691245564045690" type="FadeOut" />
+                        <action id="-12" name="Set group active" sid="172721014010264" type="System">
+                            <param id="0" name="Group name">&quot;Selector&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="405321890036125" type="System">
+                            <param id="0" name="Seconds">1.8</param>
+                        </action>
+                        <action id="1" name="Close" sid="550291957137491" type="Browser" />
+                    </actions>
+                </event-block>
+                <event-block sid="470454510825962">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="587384562182008" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">NewGame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="770279331057995" type="FadeOut" />
+                        <action id="-12" name="Set group active" sid="271124623666451" type="System">
+                            <param id="0" name="Group name">&quot;Selector&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="758104716969488" type="System">
+                            <param id="0" name="Seconds">1.8</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="997426353028226" type="System">
+                            <param id="0" name="Layout">Intro</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="688017225275417">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="233333130297008" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">ContinueGame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="849903415586949" type="FadeOut" />
+                        <action id="-12" name="Set group active" sid="368998648637930" type="System">
+                            <param id="0" name="Group name">&quot;Selector&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="321933373408210" type="System">
+                            <param id="0" name="Seconds">1.8</param>
+                        </action>
+                        <action id="-37" name="Load" sid="135422333754840" type="System">
+                            <param id="0" name="Slot">&quot;mysave&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="864792496733115">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="307626227196842" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="414362653675021" type="Seleccion">
+                            <param id="0" name="X">132</param>
+                            <param id="1" name="Y">204</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="411652815141685">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="400155429099744" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="821801604814401" type="Seleccion">
+                            <param id="0" name="X">132</param>
+                            <param id="1" name="Y">239</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="996717665239781">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="574082506157995" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="803541214515617" type="Seleccion">
+                            <param id="0" name="X">132</param>
+                            <param id="1" name="Y">274</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="683328178945112">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="651147071272869" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="750921572610208" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="359284340574250">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="401156500719472" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="476188659661078" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="528424337196473">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="716155190986624" type="kb">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="793494487258018" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="790447620347703">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="711585106603658" type="kb">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="511875475413711" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="370290829008557">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="312422317557810" type="gp">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="998556500376046" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="223664256590725">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="292605205281141" type="gp">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="130822372744691" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="812496325261570">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="702734708155009" type="kb">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="796400193928582" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="659746052051280" type="FadeOut" />
+                        <action id="-12" name="Set group active" sid="103921696702235" type="System">
+                            <param id="0" name="Group name">&quot;Selector&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="985864429298010" type="System">
+                            <param id="0" name="Seconds">1.8</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="436468964736864" type="System">
+                            <param id="0" name="Layout">Intro</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="425849187091806">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="664834842538459" type="gp">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="637872513805855" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="622765680235796" type="FadeOut" />
+                        <action id="-12" name="Set group active" sid="449983294788637" type="System">
+                            <param id="0" name="Group name">&quot;Selector&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="610354850235757" type="System">
+                            <param id="0" name="Seconds">1.8</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="859087317386862" type="System">
+                            <param id="0" name="Layout">Intro</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="383105687394846">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="942354482968735" type="kb">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="285116185242492" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="911171260001358" type="FadeOut" />
+                        <action id="-12" name="Set group active" sid="945095884557155" type="System">
+                            <param id="0" name="Group name">&quot;Selector&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="747860108385845" type="System">
+                            <param id="0" name="Seconds">1.8</param>
+                        </action>
+                        <action id="-37" name="Load" sid="545830882264043" type="System">
+                            <param id="0" name="Slot">&quot;mysave&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="160419397695430">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="294037308145401" type="gp">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="338408366094651" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="858073104137834" type="FadeOut" />
+                        <action id="-12" name="Set group active" sid="900478953877898" type="System">
+                            <param id="0" name="Group name">&quot;Selector&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="123628789820792" type="System">
+                            <param id="0" name="Seconds">1.8</param>
+                        </action>
+                        <action id="-37" name="Load" sid="858980242860466" type="System">
+                            <param id="0" name="Slot">&quot;mysave&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="867999778561386">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="987239181177221" type="kb">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="184215724936843" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="489487333607929" type="FadeOut" />
+                        <action id="-12" name="Set group active" sid="889501992620970" type="System">
+                            <param id="0" name="Group name">&quot;Selector&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="548125494373142" type="System">
+                            <param id="0" name="Seconds">1.8</param>
+                        </action>
+                        <action id="1" name="Close" sid="590452351611262" type="Browser" />
+                    </actions>
+                </event-block>
+                <event-block sid="287125942145214">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="260141175003526" type="gp">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="823793614267653" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="824028973448087" type="FadeOut" />
+                        <action id="-12" name="Set group active" sid="627427837706825" type="System">
+                            <param id="0" name="Group name">&quot;Selector&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="878366003742117" type="System">
+                            <param id="0" name="Seconds">1.8</param>
+                        </action>
+                        <action id="1" name="Close" sid="103953699905728" type="Browser" />
+                    </actions>
+                </event-block>
+                <event-block sid="754445671036259">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="221862734539591" type="Mouse">
+                            <param id="0" name="Object">NewGame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="775905374160683" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="998974656515656">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="119341960131280" type="Mouse">
+                            <param id="0" name="Object">ContinueGame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="133871492221412" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="266019977861963">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="868974766483377" type="Mouse">
+                            <param id="0" name="Object">Exit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="777136416806436" type="System">
+                            <param id="0" name="Variable">Selector</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
