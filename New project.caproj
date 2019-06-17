@@ -28,6 +28,8 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -61,7 +63,7 @@
         <prop name="Pause on unfocus">Yes</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">NW.js</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -84,6 +86,9 @@
             </object-type>
             <object-type name="AJAX" sid="582878209473939">
                 <plugin id="AJAX" />
+            </object-type>
+            <object-type name="Browser" sid="884943152732187">
+                <plugin id="Browser" />
             </object-type>
         </object-folder>
         <object-folder name="Players">
@@ -2649,9 +2654,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Browser" sid="884943152732187">
-            <plugin id="Browser" />
-        </object-type>
         <object-type name="ContinueGame" sid="820121374395927">
             <plugin id="Sprite" />
             <animation-folder>
@@ -2703,6 +2705,27 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="SolidTestBox" sid="933402645708367">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="974949712568003">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="824548083324935" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Dummy" sid="702772156609364">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="468885030265558" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Players" plugin-id="Sprite" sid="593276310540039">
@@ -2722,6 +2745,12 @@
                 <instance-variable name="VidaActual" sid="471541771535121" type="number" />
                 <instance-variable name="VidaMaxima" sid="930011168357983" type="number" />
                 <instance-variable name="Combo" sid="210474821629617" type="number" />
+                <instance-variable name="isDodge" sid="709062207552435" type="boolean" />
+                <instance-variable name="isSeen" sid="837954710896040" type="boolean" />
+                <instance-variable name="target" sid="765381964331806" type="number" />
+                <instance-variable name="posToEnemy" sid="467187566792016" type="string" />
+                <instance-variable name="TESTVAR1" sid="910908209641904" type="number" />
+                <instance-variable name="TESTVAR2" sid="538916548933551" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="CustomMovement" sid="481838044988093">
@@ -2729,6 +2758,12 @@
                 </behavior-type>
                 <behavior-type name="8Direcciones" sid="102968325859455">
                     <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="332591070900571">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="902486903038966">
+                    <behavior id="Pathfinding" />
                 </behavior-type>
                 <behavior-type name="Timer" sid="302397144691245">
                     <behavior id="Timer" />
@@ -2796,6 +2831,11 @@
                 </behavior-type>
             </behaviors>
         </family>
+        <family name="Enemy" plugin-id="Sprite" sid="735417372604932">
+            <members>
+                <member>Dummy</member>
+            </members>
+        </family>
     </families>
     <layout-folder>
         <layout>Test.xml</layout>
@@ -2810,7 +2850,7 @@
         <event-sheet>ePlayers.xml</event-sheet>
         <event-sheet>eFunctions.xml</event-sheet>
         <event-sheet>eHud.xml</event-sheet>
-        <event-sheet>EIntro.xml</event-sheet>
+        <event-sheet>eIntro.xml</event-sheet>
         <event-sheet>eMenu.xml</event-sheet>
     </event-folder>
     <global-instances>
