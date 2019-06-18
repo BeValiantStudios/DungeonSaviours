@@ -1422,10 +1422,6 @@
                                             <param id="1" name="Y">0</param>
                                             <param id="2" name="Value">angle(Players.X,Players.Y,Mouse.X,Mouse.Y)</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="378893058493099" type="System">
-                                            <param id="0" name="Variable">hAngle</param>
-                                            <param id="1" name="Value">angle(Players.X,Players.Y,Mouse.X,Mouse.Y)</param>
-                                        </action>
                                     </actions>
                                 </event-block>
                                 <comment>Control</comment>
@@ -1444,23 +1440,6 @@
                                             <param id="2" name="Value">angle(0,0,gp.Axis(f.Param(2), 2), gp.Axis(f.Param(2), 3))</param>
                                         </action>
                                     </actions>
-                                    <sub-events>
-                                        <event-block sid="304153995755266">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="422664212647703" type="System">
-                                                    <param id="0" name="First value">( (gp.Axis(f.Param(2),2) &gt; 0) |  (gp.Axis(f.Param(2),2) &lt; 0) ) | ( (gp.Axis(f.Param(2),3) &gt; 0) |  (gp.Axis(f.Param(2),3) &lt; 0) ) </param>
-                                                    <param id="1" name="Comparison">1</param>
-                                                    <param id="2" name="Second value">0</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="127429534212458" type="System">
-                                                    <param id="0" name="Variable">hAngle</param>
-                                                    <param id="1" name="Value">angle(0,0,gp.Axis(f.Param(2), 2), gp.Axis(f.Param(2), 3))</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
                                 </event-block>
                                 <comment>IA</comment>
                                 <event-block sid="520513139999005">
@@ -1480,10 +1459,6 @@
                                                     <param id="0" name="X">f.Param(3)</param>
                                                     <param id="1" name="Y">0</param>
                                                     <param id="2" name="Value">angle(Players.X,Players.Y,Enemy.X,Enemy.Y)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="504409803581695" type="System">
-                                                    <param id="0" name="Variable">hAngle</param>
-                                                    <param id="1" name="Value">angle(Players.X,Players.Y,Enemy.X,Enemy.Y)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1516,10 +1491,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="174171428941682" type="GolpeFuego">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="236911952485570" type="GolpeFuego">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="484609842037729" type="GolpeFuego">
                                                     <param id="0" name="Degrees">16</param>
@@ -1553,10 +1528,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="447987781616784" type="GolpeFuego2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="363681220928338" type="GolpeFuego2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="226453106115548" type="GolpeFuego2">
                                                     <param id="0" name="Degrees">-16</param>
@@ -1590,13 +1565,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="227828558577995" type="GolpeFuego3">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
-                                                </action>
-                                                <action id="-8" name="Set angle" sid="718681354321513" type="GolpeFuego3">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="673588029924931" type="GolpeFuego3">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="577362876818725" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -1797,10 +1769,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="901243374922341" type="GolpeTierra">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="539939549650380" type="GolpeTierra">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="880667251217836" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -1831,10 +1803,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="407576843478394" type="GolpeTierra2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="717147323305781" type="GolpeTierra2">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="412038073068942" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -1865,10 +1837,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="442637406186867" type="GolpeTierra3">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="304493493598498" type="GolpeTierra3">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="257120532619141" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -1911,10 +1883,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="923142928379928" type="GolpeAire">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="588829568031602" type="GolpeAire">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="423535904299952" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -1945,10 +1917,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="947324545582132" type="GolpeAire">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="170526799453077" type="GolpeAire">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="0" name="Spawn another object" sid="305338794177154" type="Players">
                                                     <param id="0" name="Object">GolpeAire2</param>
@@ -1957,10 +1929,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="189155503627114" type="GolpeAire2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="853537439621405" type="GolpeAire2">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="991852522766196" type="GolpeAire2">
                                                     <param id="0" name="Degrees">25</param>
@@ -1972,10 +1944,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="424143115720533" type="GolpeAire3">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="962655657081488" type="GolpeAire3">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="642153231810442" type="GolpeAire3">
                                                     <param id="0" name="Degrees">-25</param>
@@ -2009,10 +1981,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="231790296492530" type="GolpeAire4">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="449413016096406" type="GolpeAire4">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="674094725629047" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -2055,10 +2027,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="612221570180464" type="GolpeAgua">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="392173422227358" type="GolpeAgua">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="923831196909730" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -2090,7 +2062,7 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="718981667616639" type="GolpeAgua2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="469224007213553" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -2121,10 +2093,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="336594878609467" type="GolpeAgua3">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="208938418159577" type="GolpeAgua3">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="464999008130751" type="GolpeAgua3">
                                                     <param id="0" name="Degrees">-90</param>
@@ -2136,10 +2108,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="967700746961358" type="GolpeAgua4">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="771752187649299" type="GolpeAgua4">
-                                                    <param id="0" name="Angle">Self.LinkedAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="423266431868374" type="GolpeAgua4">
                                                     <param id="0" name="Degrees">90</param>
@@ -2185,10 +2157,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="319797127942783" type="GolpeHielo">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="676921818017545" type="GolpeHielo">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="249387884540060" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -2204,10 +2176,10 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="930072605475006" type="GolpeHielo">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="174749833379147" type="GolpeHielo">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-16" name="Wait" sid="872770748308571" type="System">
                                                     <param id="0" name="Seconds">0.3</param>
@@ -2233,11 +2205,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="688638893032285" type="GolpeHielo">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="927508405686904" type="GolpeHielo">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="806334699488398" type="Players">
                                                     <param id="0" name="Instance variable">Combo</param>
@@ -2252,11 +2224,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="343149839253837" type="GolpeHielo">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="890200045743852" type="GolpeHielo">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-16" name="Wait" sid="441542744304449" type="System">
                                                     <param id="0" name="Seconds">0.07</param>
@@ -2267,11 +2239,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="575163712083142" type="GolpeHielo">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="753992659483858" type="GolpeHielo">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-16" name="Wait" sid="569772236962913" type="System">
                                                     <param id="0" name="Seconds">0.3</param>
@@ -2301,11 +2273,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="596059227575609" type="GolpeHielo2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="504756328053287" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="418944832699290" type="GolpeHielo2">
                                                     <param id="0" name="Degrees">random(-90,90)</param>
@@ -2319,11 +2291,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="125532259223665" type="GolpeHielo2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="378303687432376" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="137513983254999" type="GolpeHielo2">
                                                     <param id="0" name="Degrees">random(-90,90)</param>
@@ -2337,11 +2309,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="848365998090317" type="GolpeHielo2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="185339118248968" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="199095109127599" type="GolpeHielo2">
                                                     <param id="0" name="Degrees">random(-90,90)</param>
@@ -2355,11 +2327,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="713876530137210" type="GolpeHielo2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="597147133266560" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="285385923134570" type="GolpeHielo2">
                                                     <param id="0" name="Degrees">random(-90,90)</param>
@@ -2373,11 +2345,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="647164039909421" type="GolpeHielo2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="964904367356742" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="738247812645029" type="GolpeHielo2">
                                                     <param id="0" name="Degrees">random(-90,90)</param>
@@ -2391,11 +2363,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="294218253631724" type="GolpeHielo2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="823683142556540" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="805004667770961" type="GolpeHielo2">
                                                     <param id="0" name="Degrees">random(-90,90)</param>
@@ -2409,11 +2381,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="333696528363720" type="GolpeHielo2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="194704601234729" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="966038439745637" type="GolpeHielo2">
                                                     <param id="0" name="Degrees">random(-90,90)</param>
@@ -2427,11 +2399,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="432633776369659" type="GolpeHielo2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="512825937094976" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="527275300068612" type="GolpeHielo2">
                                                     <param id="0" name="Degrees">random(-90,90)</param>
@@ -2445,11 +2417,11 @@
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="510242034859586" type="GolpeHielo2">
-                                                    <param id="0" name="Angle">hAngle</param>
+                                                    <param id="0" name="Angle">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="141028117129079" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                                 <action id="-18" name="Rotate clockwise" sid="716198541508219" type="GolpeHielo2">
                                                     <param id="0" name="Degrees">random(-90,90)</param>
@@ -2472,7 +2444,7 @@
                                             <actions>
                                                 <action id="-10" name="Set value" sid="569677745672796" type="GolpeHielo2">
                                                     <param id="0" name="Instance variable">LinkedAngle</param>
-                                                    <param id="1" name="Value">hAngle</param>
+                                                    <param id="1" name="Value">CharacterData.At(f.Param(3),0)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
