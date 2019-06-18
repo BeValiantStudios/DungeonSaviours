@@ -40,6 +40,7 @@
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="setcolor">Set color</effect>
+        <effect author="Scirra" id="tint">Tint</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -2726,6 +2727,59 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Kronejo" sid="398957978535175">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Atacando" sid="753729305411963" type="number" />
+                <instance-variable name="ElegidoX" sid="404337639310862" type="number" />
+                <instance-variable name="ElegidoY" sid="145292079066913" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="637744589776283" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="1" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="817880773870854" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="1" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="967487030422864" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="1" name="RightIdle" pingpong="0" repeatcount="1" repeatto="0" sid="792198294089276" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="1" name="UpIdle" pingpong="0" repeatcount="1" repeatto="0" sid="579965639319918" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="1" name="DownIdle" pingpong="0" repeatcount="1" repeatto="0" sid="735046365067487" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="1" name="AttackRight" pingpong="0" repeatcount="1" repeatto="0" sid="193923045715750" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="1" name="AttackUp" pingpong="0" repeatcount="1" repeatto="0" sid="887060835208258" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="1" name="AttackDown" pingpong="0" repeatcount="1" repeatto="0" sid="608709369817127" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Corte" sid="730593658816148">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="714593637238800">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="572949404983871">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277335996628225" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\diego\Desktop\corte.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Players" plugin-id="Sprite" sid="593276310540039">
@@ -2834,6 +2888,33 @@
         <family name="Enemy" plugin-id="Sprite" sid="735417372604932">
             <members>
                 <member>Dummy</member>
+                <member>Kronejo</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="SearchTime" sid="438460692026102" type="number" />
+                <instance-variable name="Vida" sid="248214938621156" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="317727970042765">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="395511273321912">
+                    <behavior id="custom" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="380346593677086">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Tint">
+                    <effect id="tint" />
+                </effect-type>
+            </effects>
+        </family>
+        <family name="Enemy2" plugin-id="Sprite" sid="947542433148465">
+            <members>
+                <member>Dummy</member>
+                <member>Kronejo</member>
             </members>
         </family>
     </families>
